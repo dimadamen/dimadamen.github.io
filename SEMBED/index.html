@@ -1,0 +1,105 @@
+<html>
+
+<head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+     <style>
+      body {
+      font-family: 'Vollkorn', sans-serif;
+      }
+
+      .subheading {
+      font-size: 120%;
+      }
+
+      h2 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      h3 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      img {
+      margin-right: 1em;
+      margin-bottom: 3em;
+      }
+
+      p {
+      margin: 0.5em;
+      }
+
+      nav {
+      margin-top: 3em;
+      margin-bottom: 1em;
+      }
+        
+        a:visited {color:#006633}
+        a:link {color:#006633}
+        a:hover {color: #FF0000}
+        
+        h1,h2,h3{
+            color:#006633
+        }
+
+    </style>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7551853-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<title>Dima Damen - Computer Vision Group - University of Bristol</title>
+<link rel="stylesheet" href="simple.css"> 
+</head>
+
+<body topmargin="15" leftmargin="15">
+<h1>SEMBED: Semantic Embedding of Egocentric Action Videos</h1>
+<h2>July 2016</h2>
+
+<p><a href="https://mwray.github.io">Michael Wray</a>*, Davide Moltisanti*, <a href="http://www.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a>, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a></p>
+    <i>* Denotes equal contribution</i>
+
+    <p><img src="Overview.png" alt="SEMBED Overview" width=600/></p>
+
+
+    <p>
+    Egocentric Action Recognition has largely been performed on datasets where
+    annotators had a choice from a finite set of semantically distinct verbs. 
+    </p>
+    
+    <p>
+    When allowed free choice over both the verb chosen to describe an action and
+    the temporal boundaries the resulting dataset contains a wide variety of
+    different labels. Whilst these labels are diverse we treat them all as
+    correct labels. Standard one vs. all classifying techniques, such as SVM, 
+    are unable to deal with the ambiguities introduced by the free annotations 
+    and so a graphical approach is introduced. 
+    </p>
+    
+    <p>
+    We present SEMBED, a method which is capable of dealing with the ambiguity
+    within the dataset by embedding videos in a Semantic Visual Graph. Multiple
+    state-of-the-art features have been tested (in the form of Improved Dense 
+    Trajectories and Overfeat CNN) along with Bag of (Visual) Words and Fisher
+    Vectors as encoding methods. We find that SEMBED using the notion of 
+    embedding videos in a graph that are linked visually and/or semantically is
+    able to beat SVM by more than 5%
+    </p>
+    
+    <h3>Publication:</h3>
+    Michael Wray, Davide Moltisanti, Walterio Mayol-Cuevas and Dima Damen (2016). SEMBED: Semantic Embedding of Egocentric Action Videos. Egocentric Perception, Interaction and Computing (EPIC). European Conference on Computer Vision Workshops ECCV 2016, Amsterdam, The Netherlands.
+    <a href = "http://arxiv.org/abs/1607.08414">Arxiv</a> | <a href="./ECCVW2016SEMBED.pdf">pdf</a> | <a href="./ECCVW2016SEMBEDSupp.pdf">supplementary</a>.</p>
+
+    <h3>Dataset:</h3>
+    <a href="http://www.cs.bris.ac.uk/~damen/BEOID/">Bristol Egocentric Object Interactions Dataset</a>
+    
+    <h3>Video:</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6bDDTIJUuic" frameborder="0" allowfullscreen></iframe>
+    
+</body>
+
+</html>

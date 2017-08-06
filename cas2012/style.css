@@ -1,0 +1,290 @@
+<?php
+$font = "verdana, \"Bitstream Vera Sans\", Geneva, \"Lucida Grande\", sans-serif";
+?>
+
+body {
+      background-color: rgb(200,200,200);
+}
+
+body, td {
+      #color: #000055;
+	  color: #020f25;
+	  color: rgb(0,0,0);
+      font: 10pt <?php echo $font; ?>;
+}
+
+.main_body {
+      width: 100%;
+      height: 100%;
+}
+.main_body2 {
+      width: 790;
+}
+
+li {
+    margin: 0.3em 0em 0em 0em;
+}
+
+a {
+      #color: #4444aa;
+	  color: #6c4b44;
+      text-decoration: underlined;
+}
+a:hover {
+      #color: #4444aa;
+	  color: #6c4b44;
+      text-decoration: none;
+}
+
+.publications li{
+	margin: 1em 0em;
+}
+
+h1 {
+      font: 12pt verdana, "Bitstream Vera Sans", Geneva, "Lucida Grande", sans-serif;
+	  font-weight: bold;
+	  color: rgb(70,70,70);
+      margin: 0em 0em 1em 0em;
+}
+h2 {
+      text-align: left;
+      font: 10pt verdana, "Bitstream Vera Sans", Geneva, "Lucida Grande", sans-serif;
+	  font-weight: bold;
+	  color: rgb(70,70,70);
+      margin: 1.5em 0em 0.5em 0em;
+}
+h3 {
+      text-align: left;
+      font: 10pt verdana, "Bitstream Vera Sans", Geneva, "Lucida Grande", sans-serif;
+	  font-weight: bold;
+	  font-style: italic;
+	  color: rgb(70,70,70);
+      margin: 1em 0em 0.5em 0em;
+}
+.content_body {
+      background-color: white;
+      #border: 1px solid #000055;
+	  border: 1px solid rgb(100,100,100);
+      margin: 3px 0px 0px 0px;
+      text-align: left;
+	  #height: 570;
+	  #overflow: auto;
+}
+.content {
+      padding: 1em 2em 1em 1em;
+      font: 10pt verdana, "Bitstream Vera Sans", Geneva, "Lucida Grande", sans-serif;
+}
+.content table {
+      border-style: none none solid solid;
+      #border-color: #000055;
+	  border-color: rgb(100,100,100);
+      border-width: 0px;
+      border-collapse: collapse;
+}      
+.content th {
+      background-color: rgb(150,150,150); //#7777aa;
+      border-style: solid solid none none;
+      #border-color: #000055;
+	  border-color: rgb(100,100,100);
+      border-width: 0px;
+      font: 10pt verdana, "Bitstream Vera Sans", Geneva, "Lucida Grande", sans-serif;
+      font-weight: bold;
+      padding: 1px 5px;
+      color: #ffffff;
+}
+.content td {
+      border-style: solid solid none none;
+      #border-color: #000055;
+	  border-color: rgb(100,100,100);
+      border-width: 0px;
+      padding: 1px 5px;
+      font: 10pt verdana, "Bitstream Vera Sans", Geneva, "Lucida Grande", sans-serif;
+}
+.content .tablefull {
+      width: 642;
+}
+.table_noborder table td{
+	padding: 1px 0;
+	border-style: none; 
+    vertical-align: top;
+ }
+.table_noborder table{
+	border-style: none;
+ }
+.table_content .heading , .table_content .heading td{
+      background-color: #7777aa;
+      border-style: solid solid none none;
+      #border-color: #000055;
+	  border-color: rgb(100,100,100);
+      border-width: 1px;
+      font: 10pt verdana, "Bitstream Vera Sans", Geneva, "Lucida Grande", sans-serif;
+      font-weight: bold;
+      padding: 1px 5px;
+      color: #ffffff;
+}
+.fill_50 {
+      height: 50pt;
+}
+.fill_100 {
+      height: 100pt;
+}
+.heading_body {
+      #background: #000055;
+	  background: rgb(100,100,100);
+      #background-image: url('pictures/header.png');
+      height:140px;
+      color: rgb(230,230,230);
+	  text-align: left;
+      font: 16pt verdana, "Bitstream Vera Sans", Geneva, "Lucida Grande", sans-serif;
+      #border: 1px solid #000055;
+	  border: 1px solid rgb(100,100,100);
+      margin: 2px 0px -53px 0px;
+}
+.heading_body .heading_text {
+	padding:0.5em 1em;
+}
+
+.heading_body a {
+	  color: white;
+}
+.heading_body a:hover {
+	  text-decoration: none;
+}
+.menu_body {
+      #background-color: #7777aa;
+      #background-color: #4f708d;
+	  background-color: rgb(180,180,180);
+      text-align: left;
+      font: 10pt verdana, "Bitstream Vera Sans", Geneva, "Lucida Grande", sans-serif;
+      #border: 1px solid #000055;
+	  border: 1px solid rgb(100,100,100);
+      margin: 10px 10px 10px 10px;
+      padding: 0.5em 0.5em;
+}
+.menu_item {
+      margin: 0em 0em;
+	padding:0.5em 0.5em;
+}
+
+.menu_body a {
+      # background-color: #7777aa;
+      # border: 1px solid #000055;
+      #color: #000055;
+	  color: rgb(70,70,70);
+      font: 10pt verdana, "Bitstream Vera Sans", Geneva, "Lucida Grande", sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+}
+.menu_body a:hover .menu_item, .menu_body .selected .menu_item{
+      #background-color: #000055;
+	  #background-color: rgb(100,100,100);
+      background-color: rgb(100, 100, 100);
+      color: white;
+}
+.submenu_body {
+      text-align: left;
+	margin: 0em 0em 0em 0.5em;
+      padding: 0em 0.2em 0.5em 0.5em;
+}
+.submenu_body a {
+      font-weight: normal;
+      text-decoration: none;
+      padding: 0em 0em;
+}
+.submenu_body a:hover, .submenu_body .selected {
+      #background-color: #486a87;
+      #background-color: rgb(120,120,120);
+      #color: #7777aa;
+	  color: rgb(20,20,20);
+}
+.trailer_body {
+     background-color: rgb(100,100,100);
+    #  background-image: url('pictures/trailer.png');
+      text-align: right;
+      color: rgb(230,230,230);
+	  font: 10pt verdana, "Bitstream Vera Sans", Geneva, "Lucida Grande", sans-serif;
+      #border: 1px solid #000055;
+	  border-width: 1px; 
+	  border-color: rgb(100,100,100);
+	  border-style: solid none none none ;
+      margin: 0px 0px;
+      padding: 0.2em 1em;
+}
+.trailer_body a {
+      background-color: #ffffff;
+      #color: #000055;
+      color: #6c4b44;
+	  font-weight: bold;
+      text-decoration: none;
+      padding: 0em 1em;
+}
+.trailer_body a:hover {
+      #color: white;
+      #color: #000055;
+	  color: rgb(100,100,100);
+      text-decoration: none;
+}
+.img_left {
+      #border: 1px solid #000055;
+	  border: 1px solid rgb(100,100,100);
+      padding: 2px;
+      margin: 2px 5px 2px 0px;
+      width: auto;
+      text-align: center;
+      float: left;
+      font: 10pt arial;
+	  font-style: italic;
+}
+.img_right {
+      #border: 1px solid #000055;
+	  border: 1px solid rgb(100,100,100);
+      padding: 2px;
+      margin: 2px 0px 2px 5px;
+      width: auto;
+      text-align: center;
+      float: right;
+      font: 10pt arial;
+	  font-style: italic;
+}
+.img_center {
+      #border: 1px solid #000055;
+	  border: 1px solid rgb(100,100,100);
+      padding: 2px;
+      margin: 2px 0px 2px 5px;
+      width: auto;
+      text-align: center;
+      float: center;
+      font: 10pt arial;
+	  font-style: italic;
+}
+.cv h2 {
+      #border-color: #000055;
+	  border-color: rgb(100,100,100);
+      border-width: 1px;
+      border-style: solid none none solid;
+      width: 100%;
+      margin: 1em 0em 0em -2em;
+      padding: 0em 0em 0em 5px ;
+}
+.cv table { 
+  border: none;
+}
+.cv td {
+      vertical-align: top;
+      border: none;
+      background: none;
+}
+.cv {
+      padding: 0em 0em 0.5em 2.5em
+}
+.cv p {
+      text-indent: -0.5em;
+      margin: 0.2em 0em;
+}
+.linkimg {
+      border: 1px solid #7777aa;
+}
+div.references {
+	padding-left: 1em;
+	text-indent: -1em;
+}

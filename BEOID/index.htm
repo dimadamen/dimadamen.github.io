@@ -1,0 +1,88 @@
+<html>
+
+<head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7551853-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<title>Dima Damen - Computer Vision Group - University of Bristol</title>
+<link rel="stylesheet" href="simple.css"> 
+</head>
+
+<body topmargin="15" leftmargin="15">
+<center><h1>Bristol Egocentric Object Interactions Dataset</h1></center>
+<h2>Release Date: July 2014 - New Annotations: June 2016</h2>
+
+<p><a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a>, <a href="http://www.bristol.ac.uk/engineering/people/teesid-leelasawassuk/overview.html">Teesid Leelasawassuk</a>, <a href="http://www.cs.bris.ac.uk/~haines/">Osian Haines</a>, Michael Wray, Davide Moltisanti, <a href="http://www.cs.bris.ac.uk/~andrew">Andrew Calway</a> and <a href="http://www.cs.bris.ac.uk/~wmayol">Walterio Mayol-Cuevas</a></p>
+
+<center>
+<a href="BEOID.png"><img src="BEOID.png" alt="Bristol Egocentric Object Interactions Dataset - Sample Images" width="900"></a>
+</center>
+
+<p>
+<b>Hardware Setup: </b> The wearable gaze tracker hardware (<a href="http://www.asleyetracking.com/" target="new">ASL Mobile Eye XG</a>) consists
+of two cameras sharing a half-mirror, one looking at the scene and another looking at the
+eye. After calibration, the scene images are synchronised with, if available, 2D gaze points.</p>
+
+<p><b>Locations: </b> Six locations were chosen: kitchen (K), workspace (W), laser printer (P), corridor with a locked door (D), cardiac gym (G) and weight-lifting machine (M) (Fig. 3). For the first
+four locations (K, W, P, D), sequences from five different operators were recorded, and from
+three operators for the last two locations (G, M). Two sequences were recorded for each operator.</p>
+
+<b>Dataset Statistics</b>
+<br/>
+<center>
+<table width=80% border=1>
+<tr><th>Location</th><th>Number of Sequences</th><th>Avg. Sequence length (in frames)</th><th>Avg. Percentage of Frames with Gaze Fixation Data</th>
+</tr>
+<tr><td align="left">Kitchen</td><td align="center">10 (5 operators)</td><td align="center">1905</td><td align="center">58.9 &#37;</td></tr>
+<tr><td align="left">Workspace</td><td align="center">10 (5 operators)</td><td align="center">1221</td><td align="center">61.9 &#37;</td></tr>
+<tr><td align="left">Printer</td><td align="center">10 (5 operators)</td><td align="center">596</td><td align="center">70.5 &#37;</td></tr>
+<tr><td align="left">Corridor with Locked Door</td><td align="center">10 (5 operators)</td><td align="center">303</td><td align="center">56.2 &#37;</td></tr>
+<tr><td align="left">Cardiac Gym</td><td align="center">9 (3 operators)</td><td align="center">5183 </td><td align="center">66.7 &#37;</td></tr>
+<tr><td align="left">Weight-Lifting Machine</td><td align="center">9 (3 operators)</td><td align="center">2059 </td><td align="center">14.6 &#37;</td></tr>
+</table>
+</center>
+<br/>
+<br/><br/>
+<b>Verbal Instructions Given to Operators</b><br/>
+<table>
+<tr>
+<th align=left>Location</th><th align=left>Verbal Instructions with fixed [] and moveable () objects</th></tr>
+<tr><td>Kitchen</td><td>Prepare coffee using the machine, place the cup on the mat and add sugar<br/>
+[tap, coffee machine, heat mat, cutlery drainer], (cup, sugar jar)</td></tr>
+<tr><td>Workspace</td><td>Plug the screwdriver for charging and place the tape in the red box<br/>
+[Socket, Box], (screwdriver, charger, tape)</td></tr>
+<tr><td>Printer</td><td>Check the printer is loaded with paper manually and using the keypad<br/> [drawer, keypad]</td></tr>
+<tr><td>Corridor with Door</td><td>Go through the locked door<br/>[door lock, door handle]</td></tr>
+<tr><td>Cardiac Gym</td><td>Use the treadmill and the bicycle next to it <br/>[treadmill panel, bicycle panel]</td></tr>
+<tr><td>Weigt-lifting Machine</td><td>Adjust the seat, chest pad and weight then use the machine<br/>
+[seat adjuster, pad adjuster, weight adjuster]</td></tr>
+</table>
+
+<b>Download</b><br/>
+<ul>
+<li>README.txt file on the dataset format
+<li>Sample dataset [a single door sequence with accompanying map and gaze information] (9.3MB) from <a href="BEOID_sample.zip">here</a>
+<li>Full dataset (5GB) from <a href="http://dx.doi.org/10.5523/bris.o4hx7jnmfqt01lyzf2n4rchg6" target="new">http://dx.doi.org/10.5523/bris.o4hx7jnmfqt01lyzf2n4rchg6</a>
+<li><font color="red"><b>NEW (2016):</b></font> Action level annotations are now available for the full dataset from <a href="BEOID_action_annotations2016.zip">here</a></li>
+<li><font color="red"><b>NEW (2016):</b></font> Multi-People Action level free annotations, used within the SEMBED publication, are also available for the full dataset from <a href="SEMBED_Annotations.zip">here</a></li>
+</ul>
+
+<b>Publications:</b><br/>
+<ul>
+<li> Damen, Dima and Leelasawassuk, Teesid and Mayol-Cuevas, Walterio (2016). You-Do, I-Learn: Egocentric Unsupervised Discovery of Objects and their Modes of Interaction Towards Video-Based Guidance. Computer Vision and Image Understanding (CVIU), vol 149 pp 98-112 August 2016.</li>
+<li> Wray, Michael and Moltisanti, Davide and Mayol-Cuevas, Walterio and Damen, Dima (2016). SEMBED: Semantic Embedding of Egocentric Action Videos. European Conference on Computer Vision Workshop (ECCVW) on Egocentric Perception, Interaction and Computing (EPIC) Oct 2016.</li>
+<li> Damen, Dima and Leelasawassuk, Teesid and Haines, Osian and Calway, Andrew and Mayol-Cuevas, Walterio (2014). You-Do, I-Learn: Discovering Task Relevant Objects and their Modes of Interaction from Multi-User Egocentric Video. British Machine Vision Conference (BMVC), Nottingham, UK. [<a href="../You-Do-I-Learn/Damen_BMVC2014.pdf">pdf</a>] [<a href="../You-Do-I-Learn/Damen_BMVC2014_abstract.pdf">abstract</a>]
+<li> Damen, Dima and Haines, Osian and Leelasawassuk, Teesid and Calway, Andrew and Mayol-Cuevas, Walterio (2014). Multi-user egocentric Online System for Unsupervised Assistance on Object Usage. ECCV Workshop on Assistive Computer Vision and Robotics (ACVR), Zurich, Switzerland. [<a href="../You-Do-I-Learn/Damen_ACVR2014_prePrint.pdf">preprint</a>]
+</ul>
+
+
+
+</body>
+
+</html>

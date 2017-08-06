@@ -1,0 +1,119 @@
+<html>
+<head> <title>Dima Damen, Lecturer in Computer Vision, University of Bristol</title>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <style>
+      body {
+      font-family: 'Vollkorn', sans-serif;
+      }
+
+      .subheading {
+      font-size: 120%;
+      }
+
+      h2 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      h3 {
+      clear: left;
+      margin-top: 1em;
+      }
+
+      p {
+      margin: 0.5em;
+      }
+
+      nav {
+      margin-top: 3em;
+      margin-bottom: 1em;
+      }
+        
+        a:visited {color:#006633}
+        a:link {color:#006633}
+        a:hover {color: #FF0000}
+        
+        h1,h2,h3{
+            color:#006633
+        }
+
+    </style>
+  </head>
+
+
+<body topmargin="15" leftmargin="15">
+<center><h1>You-Do, I-Learn: Discovering Task Relevant Objects, their Modes of Interaction and Providing Video Guides from Multi-User Egocentric Video</h1></center>
+<center>
+<table width=90%>
+<tr>
+<td>
+
+We present a <b>fully unsupervised</b> approach for the discovery of i)~task relevant objects and ii)~how these objects have been used.
+A <b>Task Relevant Object</b> is an object, or part of an object, with which a person interacts during task performance. 
+Given egocentric video from multiple operators, the approach can discover objects with which the users interact, both static objects such as a coffee machine as well as movable ones such as a cup.
+Importantly, we also introduce the term <b>Mode of Interaction</b> to refer to the different ways in which TROs are used.
+Say, a cup can be lifted, washed, or poured into.
+When harvesting interactions with the same object from multiple operators, common modes of interaction can be found.
+We present a method that is capable of discovering 95% of task relevant objects on a variety of daily tasks such as initialising a printer, preparing a coffee and setting up a gym machine. </p>
+
+<p>
+We also developed an online fully unsupervised prototype for automatically extracting video guides of how objects are used from wearable gaze trackers worn by multiple users. In the assistive mode, the paper proposes a method for selecting a suitable video guide to be displayed to a novice user indicating how to use an object, purely triggered by the user's gaze.
+</p>
+</td>
+<td width=5%></td>
+<td width=40%>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vUeRJmwm7DA" frameborder="0" allowfullscreen></iframe>
+</td></tr></table>
+<table width=90%>
+    <br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/USFaDjXkPfs" frameborder="0" allowfullscreen></iframe>
+<tr>
+<td valign=top align=left>
+<br/>
+<table width="100%" cellpadding="0">
+<tbody><tr>
+<td>
+<h2>Publications</h2>
+<ul>
+    <li>T Leelasawassuk, D Damen, W Mayol-Cuevas (2017). Automated capture and delivery of assistive task guidance with an eyewear computer: The GlaciAR system. Augmented Human. <a href="https://arxiv.org/abs/1701.02586">ArXiv</a>, <a href="https://www.youtube.com/watch?v=USFaDjXkPfs">video</a></li>
+      <li> L Chen, K Kondo, Y Nakamura, D Damen, W Mayol-Cuevas (2017). Hotspots Detection for Machine Operation in Egocentric Vision. Machine Vision Applications (MVA) pdf (TBA), <a href="https://youtu.be/ZADxABLz1GM">video</a></li>
+      <li>D Damen, T Leelasawassuk, W Mayol-Cuevas (2016). You-Do, I-Learn: Egocentric Unsupervised Discovery of Objects and their Modes of Interaction Towards Video-Based Guidance. Computer Vision and Image Understanding (CVIU), vol 149 pp 98-112 August 2016. [<a href="http://dx.doi.org/10.1016/j.cviu.2016.02.016">pdf</a>, <a href="http://arxiv.org/abs/1510.04862v2">arxiv preprint</a>]</li>
+<li> Damen, Dima and Leelasawassuk, Teesid and Haines, Osian and Calway, Andrew and Mayol-Cuevas, Walterio (2014). You-Do, I-Learn: Discovering Task Relevant Objects and their Modes of Interaction from Multi-User Egocentric Video. British Machine Vision Conference (BMVC), Nottingham, UK. [<a href="Damen_BMVC2014.pdf">pdf</a>] [<a href="Damen_BMVC2014_abstract.pdf">abstract</a>]
+<li> Damen, Dima and Haines, Osian and Leelasawassuk, Teesid and Calway, Andrew and Mayol-Cuevas, Walterio (2014). Multi-user egocentric Online System for Unsupervised Assistance on Object Usage. ECCV Workshop on Assistive Computer Vision and Robotics (ACVR), Zurich, Switzerland. [<a href="Damen_ACVR2014_prePrint.pdf">preprint</a>]
+</ul>
+
+
+<h2>Dataset</h2>
+The <a href="../BEOID">Bristol Egocentric Object Interactions Dataset</a> will be publically available.
+<br/><br><br>
+
+<h2>The method</h2>
+<table width=90%>
+<tr><td valign=top width=5%>A</td><td>
+Objects are discovered by clustering. We investigate using appearance,
+position and attention, and present results using each and a combination
+of relevant features. Both static and moveable objects can be discovered</td></tr>
+<tr><td></td><td><img src="TRO_discovery.png" width=550></td></tr>
+<tr><td valign=top>B</td><td>Multiple users enable learning varying
+views in the appearance model (left); a 3D model (middle) and various video snippets showing the different interactions with the same object (right)
+</td><tr>
+<tr><td></td><td><img src="multi-user.png" width=1000><br/>
+</td></tr>
+<tr><td valign=top>C</td><td>For the "socket", the two common modes of interaction ('switching', 'plugging') are found (left
+& right). The representative video snippet is shown (top) with the other snippets in the same
+cluster (bottom)</td></tr>
+<tr><td></td><td><img src="MOIs.png" width=1000></td></tr>
+<tr><td valign=top>D</td><td>In the assistive mode, when an object is gazed-at and recognised, a video snippet is inserted showing the most relevant common mode of interaction. (Full Video Sequence above)
+</td></tr>
+<tr><td></td><td><img src="help1.png" width=200><img src="help2.png" width=200><img src="help3.png" width=200><img src="help4.png" width=200></td></tr>
+</table>
+
+</td>
+</tr> 
+</table>
+
+</body>
+
+</html>

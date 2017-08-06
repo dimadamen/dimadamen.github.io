@@ -1,0 +1,108 @@
+<html>
+
+<head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+     <style>
+      body {
+      font-family: 'Vollkorn', sans-serif;
+      }
+
+      .subheading {
+      font-size: 120%;
+      }
+
+      h2 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      h3 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      img {
+      margin-right: 1em;
+      margin-bottom: 3em;
+      }
+
+      p {
+      margin: 0.5em;
+      }
+
+      nav {
+      margin-top: 3em;
+      margin-bottom: 1em;
+      }
+        
+        a:visited {color:#006633}
+        a:link {color:#006633}
+        a:hover {color: #FF0000}
+        
+        h1,h2,h3{
+            color:#006633
+        }
+
+    </style>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7551853-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<title>Trespassing the Boundaries: Labelling Temporal Bounds for Object Interactions in Egocentric Video</title>
+<link rel="stylesheet" href="simple.css"> 
+</head>
+
+<body topmargin="15" leftmargin="15">
+<h1>Trespassing the Boundaries: <br/>
+Labelling Temporal Bounds for
+Object Interactions in
+Egocentric Video</h1>
+
+<h2>March 2017</h2>
+
+<p><a href="http://www.davidemoltisanti.com/research" target="_blank">Davide Moltisanti</a>, <a href="https://mwray.github.io" target="_blank">Michael Wray</a>, <a href="http://www.cs.bris.ac.uk/~wmayol/" target="_blank">Walterio Mayol-Cuevas</a>, <a href="http://www.cs.bris.ac.uk/~damen" target="_blank">Dima Damen</a></p>    
+
+	<br>
+    <p><img src="pourExampleBig.png" alt="Temporal Boundaries Inconsistencies" width=853/></p>
+
+    <p>
+    Manual annotations of temporal bounds for object interactions (i.e. start and end times) are typical training input to recognition, localisation and detection algorithms.
+    </p>
+    
+    <p>
+    For three publicly available egocentric datasets, we uncover inconsistencies in ground truth temporal bounds within and across annotators and datasets. <br>
+    We systematically assess the robustness of state-of-the-art approaches to changes in labelled temporal bounds, for object interaction recognition. <br>
+    As boundaries are trespassed, a drop of up to 10% is observed for both <a href="http://lear.inrialpes.fr/people/wang/improved_trajectories" target="_blank">Improved Dense Trajectories</a> and 
+    <a href="https://github.com/feichtenhofer/twostreamfusion" target="_blank">Two-Stream Convolutional Neural Network</a>.
+    </p>
+    
+    <p>
+    We demonstrate that such disagreement stems from a limited understanding of the distinct phases of an action, and propose annotating based on the Rubicon Boundaries, <br>
+    inspired by a similarly named cognitive model, for consistent temporal bounds of object interactions. Evaluated on a public dataset, we report a 4% increase <br>
+    in overall accuracy, and an increase in accuracy for 55% of classes when Rubicon Boundaries are used for temporal annotations. 
+    </p>
+    
+    <br>
+    <br>
+    <p><img src="rubiconBoundaries3b23.png" alt="Rubicon Boundaries examples" width=600/></p>
+    
+    <h3>Publication:</h3>
+    Davide Moltisanti, Michael Wray, Walterio Mayol-Cuevas and Dima Damen (2017). Trespassing the Boundaries: Labelling Temporal Bounds for Object Interactions in Egocentric Video. International Conference on Computer Vision (ICCV), Venice, Italy, Oct 2017 |
+    <a href="./trespassing-boundaries-labeling.pdf" target="_blank">pdf (camera ready)</a> | <a href = "https://arxiv.org/abs/1703.09026" target="_blank">arXiv (v1)</a></p>
+    
+    <h3>RB Annotations:</h3>
+    Rubicon Boundary annotations for GTEA Gaze+ can be downloaded <a href="./gteaGazeRBLabels.zip">here</a>
+
+    <h3>Software:</h3>
+    Software for annotating Rubicon boundaries in video can be downloaded <a href="https://bitbucket.org/dmoltisanti/rubiconannotator">here</a>
+
+    <h3>Video:</h3>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/mWr8JJDgA3w?rel=0" frameborder="0" allowfullscreen></iframe>
+    
+</body>
+
+</html>

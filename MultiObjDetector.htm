@@ -1,0 +1,95 @@
+<html>   <head> <title>Dima Damen, Lecturer in Computer Vision, University of Bristol</title>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7551853-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <style>
+      body {
+      font-family: 'Vollkorn', sans-serif;
+      }
+
+      .subheading {
+      font-size: 120%;
+      }
+
+      h2 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      h3 {
+      clear: left;
+      margin-top: 1em;
+      }
+
+      p {
+      margin: 0.5em;
+      }
+
+      nav {
+      margin-top: 3em;
+      margin-bottom: 1em;
+      }
+        
+        a:visited {color:#006633}
+        a:link {color:#006633}
+        a:hover {color: #FF0000}
+        
+        h1,h2,h3{
+            color:#006633
+        }
+
+    </style>
+  </head>
+
+<body topmargin="25" leftmargin="25">
+<table width="100%">
+<tbody><tr><td align="center">
+<table width="950">
+<tbody><tr><td align="left">
+<center><h1>Real-time Scalable Textureless Object Detection</h1></center>
+<h3><font size="2"><a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a>, <a href="http://www.cs.bris.ac.uk/~pbunnun">Pished Bunnun</a>, <a href="http://www.cs.bris.ac.uk/~andrew">Andrew Calway</a>, <a href="http://www.cs.bris.ac.uk/~wmayol">Walterio Mayol-Cuevas</a></font></h3>
+<p align="justify">We have developed a scalable method for detecting multiple objects from a video stream in real time. The method is shape-based, thus suitable for texture-less objects. The method is based on constellations of edgelets, which are easy to calculate and occlusion-tolerant. Scalability is handled by fixed scanning paths that limit the number of considered constellations. Searching training views for constellations using a few fixed scanning paths builds a library of transformation-invariant descriptors. During testing, the image is searched for constalltions of edgelets using the same pre-defined fixed scanning paths. When a constellation is found, the descriptor is compared to the library to find candidate matche. The method was tested for up to 30 three-dimensional objects (> 100 views per object) and recall of over 50% was achieved at 7fps.</p>
+<table width="100%" cellpadding="10"><tbody><tr><td align="center">
+<img src="texturelessResultsImg.png" width="650"></td></tr></tbody></table>
+<center>
+    <iframe width="480" height="320" src="http://www.youtube.com/embed/4rPjN1mcKGc" frameborder="0" allowfullscreen></iframe>
+</center>
+
+    
+<h2>Publications</h2>
+Real-time Learning and Detection of 3D Texture-less Objects: A Scalable Approach. British Machine Vision Conference (BMVC), 2012, <a href="bmvc2012_scalable_textureless.pdf">pdf</a>, <a href="bmvc2012_abstract.pdf">abstract</a><br/><br/>
+Egocentric Real-time Workspace Monitoring using an RGB-D Camera. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2012, <a href="Egocentric_IROS2012.pdf">pdf</a><br/><br/>
+Detecting and Localising Multiple 3D Objects: A Fast and Scalable Approach. IROS Workshop on Active Semantic Perception and Object Search in the Real World (ASP-AVS-11), 2011 <a href="IROS-W2011.pdf"> pdf </a>
+<br/><br><br>
+
+<h2>Software Download</h2>
+When using this code, kindly reference our BMVC paper below.<br/><br/>
+<b><a href="MultiObjDetector_code.zip">Version 1.2 (bug-fixed & performance improved) C++ Source code is now available here [Aug 2014]</a></b>
+<br/><br/>
+<a href="http://youtu.be/4rPjN1mcKGc" target="new">Video on how to run the detector is available on Youtube</a>
+<br/><br/>
+<b><a href="DetectMe.apk">Android (4.0+) .apk file is now available [Aug 2014]</a></b>
+<br/><br><br>
+
+<h2>Videos</h2>
+Real-time and scalable detection of textureless objects using monocular camera <a href="BMVC2012/BMVC2012.avi">AVI (13.8MB)</a><br/>
+Results on hand-held sequences for the COGNITO system are available <a href="detectionAndTracking.mpeg">MPG (24.0MB)</a>.<br/>
+
+
+
+
+<h2>FurtherResults</h2>
+<img src="fig.png" width="900">
+
+
+</body></html>

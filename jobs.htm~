@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Computer Vision - University of Bristol - Jobs</title>
+<link rel="stylesheet" href="simple.css"> 
+</head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7551853-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<head>
+<body>
+<p><b> PhD Studentship in Egocentric Vision</b></p>
+
+<p>Applications are invited for a fully-funded PhD studentship (UK/EU Fees + Maintenance) in Computer Vision. The successful candidate will be working on a project focused on learning object interactions from ego-centric viewpoint (i.e. glass-mounted camera).</p>
+
+<p>Ego-centric vision is an exciting area of research, with plenty of potential, recently brought to people's attention by the introduction of wearable-ware such as Google Glass, Recon Jet, GoPro and others. The successful applicant will be using Google Glass to develop a method that learns interactions with objects of daily living (ODL) in an unsupervised manner. By studying the way multiple people use objects in a shared environment, knowledge on how ODLs can be used would be attained.</p>
+
+
+<b>Academic Requirements:</b><br/>
+
+- A minimum 2.1 honours degree or equivalent in Computer Science, Electrical and Electronic Engineering or other relevant subjects. <br/>
+- Solid mathematical ability and excellent programming skills. <br/>
+- Basic knowledge of Computer Vision and/or machine learning would be very useful. <br/>
+
+<p>Start Date: 1 October 2014 </p>
+
+<p>Deadline: open till filled - applications are invited for as soon as possible. </p>
+
+<p>For informal enquiries, contact Dr. Dima Damen: <a href="mailto:damen@cs.bris.ac.uk">damen@cs.bris.ac.uk</a> </p>
+
+<p>Please ensure that:<br/>
+<ul>
+<li> You apply for a PhD in Computer Science
+<li> You mention Dr. Dima Damen as a potential supervisor in your application
+<li> In the Funding section you tick 'would like to be considered for a funding award from the Department' and specify the title of the scholarship 'PhD Research Studentship - Ego-centric Vision' in the other box below.
+</ul>
+
+<p>**Important**<br/>
+Studentship covers full UK/EU (EU applicants who have been resident in the UK for 3 years prior to application) PhD tuition fees and a tax-free stipend at the current EPSRC rate (£13,726 in 2013/2014). EU nationals resident in the EU may also apply and will qualify only for PhD tuition fees.</p>
+
+</body>
+
+</html>

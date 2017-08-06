@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ margin:0px; min-width:950px;}
+
+/*----- HEADER -----*/
+.header{ width:100%; height:90px; background-color:#046380;}
+.logo{ float:left; margin:15px 0 0 10px; padding:5px 0 0 50px; background: url(imgs/logoIcon.gif) no-repeat left center; font:normal 24px "ae_AlMateen", Arial, Helvetica, sans-serif; color:#efecca;}
+.userInfo{ float:right; margin:30px 10px 0 0; color:#efecca; font: normal 12px Arial, Helvetica, sans-serif;}
+.userInfo a{ text-decoration:none; color:#efecca;}
+.userInfo a:hover{ text-decoration: underline;}
+.userInfo ul {list-style-type: none; margin:0px; padding:0px;}
+.userInfo li{display:inline; margin:0 0 0 20px;}
+
+/*----- MENU -----*/
+.menu{background-color:#002f2f; height:35px; font: normal 12px Arial, Helvetica, sans-serif;}
+.menu a{text-decoration:none; color:#efecca; padding:10px 5px 10px 5px;}
+.menu ul{list-style-type:none; margin:0 0 0 10px; padding:0px;}
+.menu li{padding:10px 0 10px 0; display:inline-block; margin:0 10px 0 0;}
+.menu li:hover{background: #046380 url(imgs/menuHoverRight.gif) no-repeat right top; padding:10px 0 15px 0;}
+.menu li a:hover{ background: url(imgs/menuHoverLeft.gif) no-repeat left top; padding:10px 5px 15px 5px;}
+
+.menu .active{background: #046380 url(imgs/menuHoverRight.gif) no-repeat right top; padding:10px 0 15px 0;}
+.menu span{background: url(imgs/menuHoverLeft.gif) no-repeat left top; padding:10px 0 15px 0;}
+
+
+/*----- BODY -----*/
+.breadCramps{margin:10px; font: normal 11px Arial, Helvetica, sans-serif; color:#2f2f2f;}
+.breadCramps ul{list-style-type:none; margin:0px; padding:0px;}
+.breadCramps li{display:inline; margin:0 2px 0 0;}
+.breadCramps li a{padding:0 17px 0 0; color:#046380; background:url(imgs/breadCrampsSeparator.gif) no-repeat right center; text-decoration:none;}
+.breadCramps li a:hover{ text-decoration:underline;}
+
+/*----- BODY TABLE -----*/
+.contentHeader{margin:0px 10px 0px 10px; font: bold 16px Arial, Helvetica, sans-serif; color:#046380; background:url(imgs/tableHeaderRight.gif) no-repeat right top #e6e2af; padding:0px; display: block;}
+.contentHeader span{background:url(imgs/tableHeaderLeft.gif) no-repeat left top; padding:6px 10px 5px 10px; margin:0px; display:block;}
+
+.contentBody{ margin:0 10px 50px 10px; background: url(imgs/tableFooterLeft.gif) no-repeat left bottom #efecca; font: normal 12px Arial, Helvetica, sans-serif; color:#2f2f2f;}
+.contentBody a{color:#2f2f2f; text-decoration:none}
+.contentBody a:hover{color:#2f2f2f; text-decoration:underline}
+.contentBody em {color:#F00; font: bold 12px Arial, Helvetica, sans-serif; font-style:normal;}
+.contentBody2{background: url(imgs/tableFooterRight.gif) no-repeat right bottom; padding:10px;}
+
+.contentBody table{border-left:1px solid #d0cb8b; border-bottom:1px solid #d0cb8b;}
+.contentBody table td{border-top:1px solid #d0cb8b; border-right:1px solid #d0cb8b; padding:5px 10px;}
+
+.textField{border:1px solid #d0cb8b; padding:6px; width:185px; margin:0 5px 0 0;}
+
+/*Button*/
+.button{ font: bold 12px Arial, Helvetica, sans-serif; color:#FFF; border:none 0px; background: url(imgs/buttonLeft.gif) no-repeat left top #046380; display: inline-block; margin:0px;}
+.button a{padding:7px 12px 7px 12px; color:#FFF; display:block;}
+.button a:hover{ background:url(imgs/buttonLeftHover.gif) no-repeat left top; color:#FFF; text-decoration:none;}
+.button span{padding:0px; margin:0px; display: block; background:url(imgs/buttonRight.gif) no-repeat right top;}
+.button span:hover{ background: url(imgs/buttonRightHover.gif) no-repeat right top #002f2f;}
+
+/*Disabled Button*/
+.button_D{ font: bold 12px Arial, Helvetica, sans-serif; color:#FFF; border:none 0px; background: url(imgs/buttonLeft_D.gif) no-repeat left top #c3c3c3; display: inline-block; margin:0px;}
+.button_D a{padding:7px 12px 7px 12px; color:#FFF; display:block;}
+.button_D a:hover{padding:7px 12px 7px 12px; color:#FFF; display:block; text-decoration:none;}
+.button_D span{padding:0px; margin:0px; display: block; background:url(imgs/buttonRight_D.gif) no-repeat right top;}
+
+
+.aa{width: auto; min-height:180px; border:solid 1px #d0cb8b; background-color:#FFF; padding:5px 10px 10px 10px; margin:10px 0 0 0; line-height:24px;}
+
+/*----- FOOTER -----*/
+.footer{  position: fixed; bottom:0px; width: 100%; background-color:#002f2f; font:normal 10px Arial, Helvetica, sans-serif; color:#efecca; text-align:center; padding:12px 0; margin:10px 0 0 0;}
+
+/* styling of the container. */
+a.player {
+	display:block;
+	width: 635px;
+	height:360px; 
+	text-align:center;
+	margin:0 15px 15px 0;
+	float:left;
+	border:1px solid #999;
+}
+
+/* play button */
+a.player img {
+	margin-top:70px;
+	border:0px;
+}
+
+/* when container is hovered we alter the border color */
+a.player:hover {
+	border:1px solid #000;
+}
+
+a.player-small{
+	//display:block;
+	float:right;
+	clear:both;
+	width: 320px;
+	height:240px; 
+	text-align:center;
+	margin:0 15px 15px 0;
+	float:left;
+	border:1px solid #999;
+}
+
+/* play button */
+a.player-small img {
+	margin-top:70px;
+	border:0px;
+}
+
+/* when container is hovered we alter the border color */
+a.player-small:hover {
+	border:1px solid #000;
+}

@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Computer Vision - University of Bristol - Publications</title>
+<link rel="stylesheet" href="simple.css"> 
+</head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7551853-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<head>
+<body>
+<p><b> Conference Papers</b></p>
+<p>Damen, Dima and Hogg, David (2009). Attribute Multiset Grammars for Global Explanations of Activities. British Machine Vision Conference (BMVC). <a href ="Damen_BMVC09.pdf">pdf</a>, <a href="Damen_BMVC09_abstract.pdf">abstract</a></p>
+
+<p>Damen, Dima and Hogg, David (2009). Recognizing Linked Events: Searching the Space of Feasible Explanations. Computer Vision and Pattern Recognition (CVPR) <a href="CVPR09.pdf">pdf</a>, <a href="CVPR09_poster.jpg">poster</a></p>
+
+<p>Damen, Dima and Hogg, David (2008). Detecting Carried Objects in Short Video Sequences. European Conference on Computer Vision (ECCV) Springer-Verlag. 
+<b>3</b>,154-167 <a href="DamenHoggECCV2008.pdf">pdf</a> <a href="http://www.comp.leeds.ac.uk/vision/BaggageDetection/ECCV08P.gif" target="_new">poster</a> <a href="ECCVDemo.avi">demo</a></p>
+
+<p>Damen, Dima and Hogg, David (2007). Associating People Dropping off and
+Picking up Objects. British Machine Vision Conference (BMVC). <a href="DamenHoggBMVC07.pdf">pdf</a> <a href="BMVCPresentation.pdf">Oral Presentation</a></p>
+
+<p>Damen, Dima and Hogg, David (2007). Bicycle Theft Detection.
+International Crime Science Conference. (CS2) <a href="DamenHoggCS207.pdf">pdf</a> <a href="IC2Presentation.pdf">Oral Presentation</a></p>
+
+<p>Damen, Dima and Hogg, David (2007). <a href="makeSomeNoisePoster.htm"
+target="_self">Bicycle Theft Detection - How to deal with visual uncertainties</a>.
+Make Some Noise (Faculty of Engineering Postgraduate Research Symposium).
+Faculty of Engineering, University of Leeds</p>
+
+<p><b> Theses</b></p>
+<p>(2009) Activity Analysis: Finding Explanations for Sets of Events. <i>PhD Thesis</i>. University of Leeds <a href="http://www.comp.leeds.ac.uk/cgi-bin/sis/ext/rs_pub.cgi?cmd=displayabstract&amp;pagetype=fac&sid=200010303">abstract</a> <a href="http://www.comp.leeds.ac.uk/research/pubs/theses/DimaDamen.pdf">pdf (6MB)</a></p>
+<p>(2003) Visual Signature for Large Scale Tracking. <i>MSc Thesis</i>. University of Leeds <a href="aldamen.pdf">pdf</a></p>
+
+
+</body>
+
+</html>

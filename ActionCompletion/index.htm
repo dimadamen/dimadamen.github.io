@@ -1,0 +1,119 @@
+<html>
+
+<head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+     <style>
+      body {
+      font-family: 'Vollkorn', sans-serif;
+      }
+
+      .subheading {
+      font-size: 120%;
+      }
+
+      h2 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      h3 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      img {
+      margin-right: 1em;
+      margin-bottom: 3em;
+      }
+
+      p {
+      margin: 0.5em;
+      }
+
+      nav {
+      margin-top: 3em;
+      margin-bottom: 1em;
+      }
+        
+        a:visited {color:#006633}
+        a:link {color:#006633}
+        a:hover {color: #FF0000}
+        
+        h1,h2,h3{
+            color:#006633
+        }
+
+    </style>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7551853-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<title>Dima Damen - Computer Vision Group - University of Bristol</title>
+<link rel="stylesheet" href="simple.css"> 
+</head>
+
+<body topmargin="15" leftmargin="15">
+<h1>Action Completion</h1>
+<h2>July 2016</h2>
+
+<p>Farnoosh Heidarivincheh, <a href="http://www.cs.bris.ac.uk/~majid/">Majid Mirmehdi</a>, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a></p>
+
+    <p><img src="Action_Completion_Overview.png" alt="Action Completion - Overview" width=600/></p>
+
+
+<p>
+    Robust motion representations for action recognition have achieved
+    remarkable performance in both controlled and in-the-wild scenarios.</p>
+    
+    <p>
+Such representations are primarily assessed for their ability to label a sequence
+according to some predefined action classes (e.g. walk, wave,
+open). Although increasingly accurate, these classifiers are likely to label
+a sequence, even if the action has not been fully completed, because
+the motion observed is similar enough to the training set. Consider the
+case where one attempts to drink but realises the beverage is too hot. A
+        drinking-vs-all classifier is likely to recognise this action as drinking regardless.</p>
+    
+    <p>
+We introduce the term action completion as a step beyond the
+task of action recognition. It aims to recognise whether the action's goal
+has been successfully achieved. The notion of completion differs per action
+and could be infeasible to verify using a visual sensor, however, for
+many actions, an observer would be able to make the distinction by noticing
+subtle differences in motion.
+    </p>
+    
+    <p>Since the notion of completion differs per action, a general action
+completion method should investigate the performance of different types
+of features to accommodate the various action classes. For example, for
+the action pick, the difference between complete and incomplete actions
+originates from the subtle change in body pose when holding an object,
+or by observing an object in the hand. On the other hand, for the action
+drink, the speed at which the action is performed is better able to assess
+the completion. We propose a method that chooses the feature(s) suitable
+for recognising completion from the pool of depth features using by
+leave-one-person-out cross validation on the training set and automatically
+selecting the most discriminative feature(s).
+</p>
+    
+    <h3>Publication:</h3>
+    Farnoosh Heidarivincheh, Majid Mirmehdi and Dima Damen (2016). Beyond Action Recognition: Action Completion in RGB-D Data. British Machine Vision Conference, York, UK. <a href="http://www.bmva.org/bmvc/2016/papers/paper142/index.html">BMVC Proceedings</a>, <a href="http://www.bmva.org/bmvc/2016/papers/paper142/paper142.pdf">PDF</a>, <a href="http://www.bmva.org/bmvc/2016/papers/paper142/abstract142.pdf">Abstract</a> [Note: <a href="#fig3">Fig3 updated</a>]
+
+    <h3>Dataset:</h3>
+    Full dataset (RGB + Depth + Skeleton) [33GB] available at: <a href="http://dx.doi.org/10.5523/bris.66qry08cv1fj1eunwxwob3fjz">http://dx.doi.org/10.5523/bris.66qry08cv1fj1eunwxwob3fjz</a>
+    
+    <h3>Sample Results:</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iBdW-kVKMds" frameborder="0" allowfullscreen></iframe>
+    <p><img src="Completion_Results.png" alt="Action Completion - Results" width=600/></p>
+    
+    <a name="fig3"><h3>Fig 3 updated</h3></a>
+    Following the BMVC 2016 publications, results in Fig 3 needed updating. Please find below the new figure. Note that these updated results do not affect the paper's arguments.<br/>
+    
+    <img src="Updated_Fig3.png" width="60%">
+</body>
+
+</html>

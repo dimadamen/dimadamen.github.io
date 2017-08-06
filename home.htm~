@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7551853-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<title>Dima Damen - Computer Vision Group - University of Bristol</title>
+<link rel="stylesheet" href="simple.css"> 
+</head>
+
+<body topmargin="15" leftmargin="15">
+<table width=85% align=center>
+
+<tr>
+<td colspan=3>
+<h2>News:</h2>
+Nov 2013: Project GlaciAR is starting funded by <a href="http://www.sait.samsung.co.kr/saithome/Page.do?method=main&pagePath=01_about/&pageName=2013gro">Samsung's GRO 2013 Awards</a><br/>
+Nov 2013: <a href="http://crs2013.org" target="new">Cognitive Robotics Systems (CRS 2013)</a> (<a href="http://www.iros2013.org/" target="new">IROS 2013</a> workshop), successfully concludes at Tokyo, Japan.<br/>
+Sep 2013: <a href="http://bmvc2013.bristol.ac.uk" target="new">BMVC 2013</a> successfully concluded at Bristol<br/>
+Aug 2013: Outstanding Reviewer award at <a href="http://www.avss2013.org/awards" target="new">IEEE AVSS 2013</a>.<br/>
+June 2013: Outstanding Reviewer award at <a href="http://www.pamitc.org/cvpr13/" target="new">IEEE CVPR 2013</a>.<br/>
+May 2013: Project Ideas for 3G403 and 2G400 students available <a href="projects.htm">here</a><br/>
+May 2013: New bug-fixed version (v1.1) of our Multi-Object Detector (MOD) code is now available <a href="MultiObjDetector.htm">online</a><br/>
+Apr 2013: PhD Opening - apply as soon as possible... Details: <a href="jobs.htm">PhD studentship in Computer vision</a> <br/>
+Dec 2012: From Jan 2013, I start a lectureship in computer vision at the University of Bristol<br/>
+Sept 2012: <a href="http://www.bmva.org/bmvc/2012/"><font color="#DD0000"><b>Best Poster at BMVC 2012</b></font></a> for our paper <a href="MultiObjDetector.htm">'Real-time Learning and Detection of 3D Texture-less Objects: A Scalable Approach'</a>
+</td>
+</tr>
+<tr>
+<td align=center colspan=3>
+<h1>Research...</h1>
+</td>
+</tr>
+<tr>
+<td valign="bottom" >
+<a href="MultiObjDetector.htm"><img src="multiObj.png" border=0><br/>Real-time Learning and Detection of Texture-minimal Objects</a>
+</td>
+<td align=centre valign="bottom" >
+<a href="http://www.comp.leeds.ac.uk/vision/Bicycles/bikes2.htm"><img src="bikes2.jpg" border=0><br/><center>The Bicycles Problem</center></a>
+</td>
+<td align=centre valign="bottom" >
+<a href="http://www.comp.leeds.ac.uk/vision/BaggageDetection/baggage.htm"><img src="bags2.jpg" border=0><br/><center>Detecting Carried Objects</center></a>
+</td>
+</tr>
+</table>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<link rel="stylesheet" href="simple.css"> 
+</head>
+
+<body topmargin="25" leftmargin="25">
+<p>A dataset of cyclists locking their bicycles onto racks and picking them up later was
+acquired. The first dataset collection extended over 1 hour and staged 28 different cyclists.
+A view from above was selected to avoid blocking the camera by passing pedestrians or
+vehicles. The second dataset collection was staged for 50 minutes and included 9 cyclists.
+The third full day (9.5 hours) collection recorded a normal day overlooking the same
+bicycle racks. 22 participants used the racks over the course of the day. In all three
+recordings, simulated thefts were performed. The number of staged thefts was 7, 1 and 5
+respectively.
+</p>
+<p align=justify>A blob tracker was used to retrieve walking pedestrians. Obvious faults were corrected by
+merging and splitting trajectories on the basis of spatial discontinuities and colour profiles.
+To detect bicycles, reference images of the racks area were automatically taken before and
+after an event. The reference images are compared to detect the added or removed bicycle
+blobs. Change in the number of edge features was used to classify bicycles into dropped
+or picked bicycles.
+</p>
+
+<b>Videos</b><br/>
+<table width=95% align=center>
+<tr>
+<td>
+<center> Input Video </center>
+<embed src="inputVideo.mpg" height=270 width=300>
+</td>
+<td>
+<center> Example1: Drop </center>
+<embed src="theftDrop.wmv" height=270 width=300>
+</td>
+<td>
+<center> Example1: Detected Theft </center>
+<embed src="theftPick.wmv" height=270 width=300>
+</td>
+</tr>
+</table>
+
+<table width=100%>
+<tr>
+<td width = 70% valign=top>
+In checking people look the same, RGB information is used (right). Other passive biometrics could be easily incorporated into the framework. The power of this framework could be detailed in the following points:
+<ul>
+<li>It can be generalized to dropping and picking objects (<a href="DamenHoggBMVC07.pdf">BMVC07</a>).</li>
+<li>It provides a probabilistic approach that takes the underlying certainties related to tracking and object detection into consideration.</li>
+<li>Risk assessment is considered in raising too many false alarms.</li>
+</ul>
+</td>
+<td>
+<table>
+<tr>
+<td>
+<img src="diff1.jpg">
+</td>
+<td>
+<img src="diff3.jpg">
+</td>
+</tr>
+<tr>
+<td>
+<img src="diff2.jpg">
+</td>
+<td>
+<img src="diff4.jpg">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<b>Research Motivation:</b><br/>
+<p>Several local councils had been installing CCTV cameras on top of bicycles racks to deter bicycle thefts. In June this year, York had announced such a scheme after they noticed an alarming increase in bicycle thefts (<a href="http://www.yorkpress.co.uk/news/yorknews/display.var.1455377.0.cctv_cameras_at_bike_racks.php">The press, June 2007</a>). Yet installing CCTV cameras that are manually monitored has not proven as efficient as required in London for example. Daniel Westrop had been stealing two bicycles a day in the full view of CCTV cameras. <a href="http://www.dailymail.co.uk/pages/live/articles/news/news.html?in_article_id=457139&in_page_id=1770">Daily Mail provides CCTV photage from October 2007 and January 2007</a>. A solution is thus saught to minimize the monitoring time and highlight cases where thefts are suspected.</p>
+
+<p>Bicycle thefts is an increasingly alarming crime both in the UK and abroad. Over half a million bicycles are stolen annually with only 5% returned to the owners (<a href="http://www.tiscali.co.uk/money/features/insurance_bicycle.html">Tescali Money</a>). In the EUICS report entitled "The Burden of Crime in the EU" (2005), UK is even below the EU average in bicycle thefts with the Netherlands and Denmark topping the list of countries with the highest rates of bicycle thefts.</p>
+
+<a href="publications.htm">Scientific publications about this work</a>
+
+</body>
+
+</html>
