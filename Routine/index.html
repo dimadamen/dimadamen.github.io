@@ -1,0 +1,115 @@
+<html>
+
+<head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+     <style>
+      body {
+      font-family: 'Vollkorn', sans-serif;
+      }
+
+      .subheading {
+      font-size: 120%;
+      }
+
+      h2 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      h3 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      img {
+      margin-right: 1em;
+      margin-bottom: 3em;
+      }
+
+      p {
+      margin: 0.5em;
+      }
+
+      nav {
+      margin-top: 3em;
+      margin-bottom: 1em;
+      }
+        
+        a:visited {color:#006633}
+        a:link {color:#006633}
+        a:hover {color: #FF0000}
+        
+        h1,h2,h3{
+            color:#006633
+        }
+
+    </style>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7551853-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<title>Dima Damen - Computer Vision Group - University of Bristol</title>
+<link rel="stylesheet" href="simple.css"> 
+</head>
+
+<body topmargin="15" leftmargin="15">
+<h1>Unsupervised Long-term Routine Modelling</h1>
+<h2>April 2016</h2>
+
+<p><a href="https://vilab.blogs.ilrt.org/?cmt-management-team=yangdi-xu">Yangdi Xu</a>, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a></p>
+
+    <img src="kitchenDataset.png" alt="officeExample1" width=500/><br/>
+
+    <p>
+    Motivated by the researches related to smart home living and elderly care, 
+	this work focuses on investigating the indoor routines of a single person using unsupervised Dynamic Bayesian Network. 
+	Routine is accepted by the general public as the common, regular or standard course of activity patterns.
+    </p>
+    
+    <p>
+    We emphasise the relationship between activity patterns and time - in routine modelling we are not only interested in what happens, 
+	but also in when does it happen.
+    </p>
+    
+    <p>
+    We propose to model the routine using a Dynamic Bayesian Network (DBN). Our DBN avoids using heuristic thresholds and incorporates routine-independent priors to improve performance.
+    </p>
+    
+    <p><img src="CombinedModel3.PNG" alt="Overview" width=600/></p>
+    
+    <h3>Publications:</h3>
+   <p> (2017) Y Xu, D Bull, D Damen. Unsupervised Long-Term Routine Modelling using Dynamic Bayesian Networks. IEEE Int Conf on Digital Image Computing Technologies and Applications (DICTA). (PDF to come)</p>
+<p>(2015) Y Xu, D Bull, D Damen. Unsupervised Daily Routine Modelling from a Depth Sensor using Bottom-Up and Top-Down Hierarchies. Asian Conference on Pattern Recognition (ACPR).</p>
+
+    <h3>Dataset:</h3>
+	<p>
+	The dataset that is viable for routine modelling needs to have the following properties: 
+        <ul>
+            <li>The recorded activities needs to appear frequently to be routines. There are a lot of the dataset that is focus on specific action or activity for the recognition purpose, and their lack of repetitiveness makes them inappropriate for our experiment.</li>
+            <li>The data should be a "long-term" recording. The definition of "long-term" here is not about the length of each individual recorded sequence, it is rather about the range of time that the dataset can cover. 
+	Since activities can only be considered as routine if they happen frequently in period of weeks or even months. Therefore, the datasets that only focus on activity instances do not meet the requirement. </li>
+            <li>The recording should be `non-scripted' which means that the participant is free to act according to his own behaviour habit.</li>
+    </ul>
+	</p>
+	
+	<h4>Office Kitchen:</h4>
+	<p>
+	The office kitchen dataset contains four sets of recordings.
+	the video sequences captured three single individuals in an office kitchen and lasted for 6 days using a single RGB-D prime sense. 
+	The camera is set at the entrance of the kitchen.
+	</p>
+    <p>Link: coming soon!</p>
+   
+	<h4>Residential Kitchen:</h4>
+    <p>
+    In the publication above, we also captured a dataset from a multi-sensored house for one week's period. Due to privacy constraints this dataset cannot be recorded.
+    This residential recording is part of the SPHERE dataset. More details on the SPHERE project is available <a href="http://www.irc-sphere.ac.uk">here</a>
+    <p><img src="house.png" alt="houseExample1" width=600/></p>
+    
+</body>
+
+</html>
