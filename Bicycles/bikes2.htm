@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Computer Vision - University of Leeds - Linking Drop and Pick events</title>
+<link rel="stylesheet" href="../simple.css"> 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7551853-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</head>
+
+<body topmargin="25" leftmargin="25">
+<table width=100%>
+<tr><td align=center>
+<table width=950>
+<tr><td>
+<center><h1>Associating Drop and Pick Events in the Bicycles Domain</h1></center>
+<h3><font size=2><a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a>, <a href="https://engineering.leeds.ac.uk/staff/84/Professor_David_Hogg">David Hogg</a></font></h3>
+<p align=justify>This research aims at recognising drop and pick events in cluttered environments, as well as connecting drops with picks of the same object. This helps in providing an automatic log of events occurring. It can also be utilized in security applications like theft detection. Due to visual ambiguities arising from occlusion and noise, we find the best constrained globally optimal explanation given all data up-to-date. The approach is being evaluated on a several-days datasets from CCTV cameras.</p>
+<table width=80% align=center>
+<tr><td>
+<img src = "Lee.jpg"></td>
+<td><img src = "Cam.jpg"></td>
+</tr></table>
+
+<h2>Research Motivation</h2>
+<p align=justify>Several local councils had been installing CCTV cameras on top of bicycles racks to deter bicycle thefts. In June 2007, York had announced such a scheme after they noticed an alarming increase in bicycle thefts (<a href="http://www.yorkpress.co.uk/news/yorknews/display.var.1455377.0.cctv_cameras_at_bike_racks.php">The press</a>). Yet installing CCTV cameras that are manually monitored has not proven as efficient as required in London (<a href="http://www.dailymail.co.uk/pages/live/articles/news/news.html?in_article_id=457139&in_page_id=1770">Daily Mail</a>). A solution is thus sought to minimize the monitoring time and highlight cases where thefts are suspected.</p>
+
+<table width=100% cellpadding=0>
+<tr>
+<td>
+<h2>Demos and Videos</h2>
+Dataset Sample (<a href="sample.avi">AVI 3.7MB</a>)<br/>
+Correctly Detected Theft: <a href="theftDrop.avi">Drop</a> (AVI 4.2MB), <a href="theftPick.avi">Pick</a> (AVI 5.0MB)<br/>
+Online event logging and linking visualization (<a href="onlineEventLoggingAndConnection.avi">AVI 0.7MB</a>)
+
+<h2>Publications</h2>
+
+<p>Damen, Dima and Hogg, David (2009). Recognizing Linked Events: Searching the Space of Feasible Explanations. Computer Vision and Pattern Recognition (CVPR) <a href="CVPR09.pdf">pdf</a></p>
+
+<p>Damen, Dima and Hogg, David (2007). Associating People Dropping off and Picking up Objects. British Machine Vision Conference (BMVC 07). </p>
+
+<p>Damen, Dima and Hogg, David (2007). Bicycle Theft Detection. International Crime Science Conference. (CS2 07)</p>
+
+</td><td valign = top>
+<img src = "dpMatch.jpg"></td>
+</tr></table>
+
+<h2>Media Coverage</h2>
+Feb 2008: Bike chains get high-tech backup <a href="EngineeringAndTechnology.pdf">Briefing Latest, Engineering and Technology</a><br/>
+Mar 2008: Safer cycles <a href="ScanBikes.jpg">insight - The business magazine of the University of Leeds</a><br/>
+Feb 2008: Silicon essentials - Bicycle Theft Detection <a href="http://www.hero.ac.uk/uk/business/archives/2008/silicon_sentinels_Feb.cfm">HERO</a><br/>
+Dec 21<sup>st</sup> 2007: Student's camera technology will help combat bicycle thefts. <a href="http://www.yorkshirepost.co.uk/news/Students-camera-technology-will-help.3612098.jp">Yorkshire Post</a><br/>
+Dec 20<sup>th</sup> 2007: Putting the breaks on bicycle thieves. <a href="http://reporter.leeds.ac.uk/press_releases/current/bike_cctv.htm">Press Release by the University of Leeds PR office</a><br/>
+
+<h2>The Method</h2>
+<table width=100% border = 1>
+<tr><td align=center>
+<img src = "bikesMethod3.jpg"></td>
+<td align=center><img src = "bikesMatch.jpg"></td></tr>
+<tr><td align=center>(a)</td><td align=center>(b)</td></tr></table>
+(a) When activity is detected inside the racks area, changed pixels grouped into clusters and trajectories are stochastically linked <br/>
+(b) The match between pixels is used to connect drop to pick events<br/>
+(c) A constrained globally optimal solution is seeked for all observations available until now<br/>
+
+<h2>Acknowledgement</h2>
+<a href="http://www.nationalexpresseastanglia.com/" target="_new">National Express East Anglia</a> kindly assisted in the research by providing a dataset from one of their CCTV cameras overlooking a cluttered bicycle rack in a train station.
+
+</td></tr></table>
+
+</td></tr></table>
+
+</body>
+
+</html>

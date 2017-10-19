@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Computer Vision - University of Leeds - Detecting Carried Objects in Short Video Sequences</title>
+<link rel="stylesheet" href="../simple.css"> 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7551853-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</head>
+
+<body topmargin="25" leftmargin="25">
+<table width=100%>
+<tr><td align=center>
+<table width=950>
+<tr><td>
+<center><h1>Detecting Carried Objects in Short Video Sequences</h1></center>
+<h3><font size=2><a href="http://www.comp.leeds.ac.uk/dima">Dima Damen</a>, <a href="http://www.comp.leeds.ac.uk/dch">David Hogg</a></font></h3>
+<p>We have developed a new method for detecting objects carried by people. It detects visible objects, larger than a few centimeters, carried by people walking in any direction in a scene that is not too crowded. It works by comparing tracked individuals with an idealised shape model of a pedestrian not carrying any objects. Protrusions beyond the expected silhouette are potential carried objects.</p>
+<table width=100% cellpadding = 10><tr><td align=center>
+<img src = "ECCVResultsImg.jpg"></td></tr></table>
+
+<h2>Software Download</h2>
+MATLAB code of the software is now available with details of how to use it - <a href="LeedsBaggageDetector.zip">download (3.0MB)</a><br/>
+A short sequence from PETS2006 to test the code - <a href="Set1Ex.zip">download (3.9MB)</a><br/>
+<br/><br/>
+
+<table width=100% cellpadding=0>
+<tr>
+<td>
+<h2>Demos and Videos</h2>
+Demo of the approach <a href="BMVA_s.avi">AVI (4.8MB)</a><br/>
+Short Presentation <a href="Baggage.pdf">PDF (1.2MB)</a><br/>
+Results on PETS2006 dataset <a href="http://www.comp.leeds.ac.uk/dima/ECCVDemo.avi">AVI (11.8MB)</a><br/>
+Other results <a href="Bags2Ex2.mpg">MPG (1.4MB)</a><br/>
+
+<h2>Publications</h2>
+Dima Damen and David Hogg (2008). Detecting Carried Objects in Short Video Sequences. European Conference on Computer Vision (ECCV) Springer-Verlag. <b>3</b>,154-167 <a href="DamenHoggECCV2008.pdf">pdf</a>, <a href="ECCV08P.gif" target="_top">poster</a><br/>
+<br/>
+Annotation of PETS2006 carried objects is available <a href="AnnotationPETS2006.zip">here</a> (in <a href="http://viper-toolkit.sourceforge.net" target="_new">VIPER</a> and text file formats).
+
+</td><td valign = top>
+<img src = "resultsSnapshot.bmp.jpg"></td>
+</tr></table>
+
+<h2>The Method</h2>
+<table border=1>
+<tr>
+<td><img src="inputBag.jpg"></td>
+<td><img src="7833__personTemplate.jpg"></td>
+<td><img src="7833_templateBestMatched.jpg"></td>
+<td><img src="7833_diff.jpg"></td>
+<td><img src="7833_labeledGCTemplatesNewTerms.jpg"></td>
+</tr>
+<tr>
+<td align=center>(a)</td>
+<td align=center>(b)</td>
+<td align=center>(c)</td>
+<td align=center>(d)</td>
+<td align=center>(e)</td>
+</tr>
+</table>
+
+(a) One frame from a short sequence <br/>
+(b) The motion template obtained from background subtraction<br/>
+(c) Aligned motion template of a pedestrian walking in the same direction and carrying nothing<br/>
+(d) A map of the protrusions that might correspond to carried objects<br/>
+(e) Detected carried objects: The MAP solution for a Markov random field over this protrusion map, combining a prior on the location of carried objects with a spatial continuity assumption<br/>
+</td></tr></table>
+</td></tr></table>
+</body>
+
+</html>
