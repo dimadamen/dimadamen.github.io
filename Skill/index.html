@@ -57,35 +57,31 @@ pageTracker._trackPageview();
 </head>
 
 <body topmargin="15" leftmargin="15">
-<h1>Who's Better, Who's Best: Skill Determination in Video using Deep Ranking</h1>
-<h2>March 2017</h2>
+<h1>Who's Better? Who's Best?: Pairwise Deep Ranking for Skill Determination</h1>
+<h2>March 2018</h2>
 
-<p>Hazel Doughty, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a>, <a href="http://www.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a></p>
+<p><a href="https://hazeldoughty.github.io">Hazel Doughty</a>, <a href="https://dimadamen.github.io">Dima Damen</a>, <a href="http://www.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a></p>
 
-<table width=90%>
+<table width=60%>
 <tr>
 <td valign="middle">
 
-<p>We present a method for assessing skill of performance from video, for a variety of tasks, ranging from drawing to surgery
-and rolling dough. We formulate the problem as pairwise and overall ranking of video collections, and propose a supervised deep 
-ranking model, which characterises the relative differences in performance between a pair of videos. Each pair consists of two videos:
-one ranked higher than the other by <i>human annotators</i> in terms of the skill displayed. By assigning videos a relative score of
- skill for the given task, we can create a <i>skill ranking</i> for a set of videos. We utilise a 
-two-stream Temporal Segment Network to capture both the type and quality of motions and the evolving task state. 
-
-<p>Results demonstrate 
-our method is applicable to a variety of tasks, with the percentage of correctly ordered pairs of videos ranging from 70%
-to 82% for all four datasets. We demonstrate the robustness of our approach via sensitivity analysis of its parameters. We see 
-this work as effort toward the automated and objective organisation of <i>how-to</i> videos and overall, generic skill determination in video.</p>
+<p>We present a method for assessing skill of performance from video, applicable to a variety of tasks, ranging from surgery to drawing
+and rolling pizza dough. We formulate the problem as pairwise (<it>who's better</i>) and overall (<i>who's best</i>)ranking of video collections, 
+using supervised deep ranking. We propose a novel loss function that learns discriminative features when a pair of videos exhibit variance in skill,
+and learns shared features when a pair of videos exhibit comparable skill levels. Results demonstrate our method is applicable across tasks, with the
+percentage of correctly ordered pairs of videos ranging from 70% to 83% for four datasets. We demonstrate the robustness of our approach via
+sensitivity analysis of its parameters.
+<p> We see this work as effort toward the automated and objective organisation of <i>how-to</i> videos and overall, generic skill determination in video.</p>
 
 </td>
 <td valign="top" width=5%></td>
 <td valign="top" width=40%>
-    <p><img src="concept.png" alt="Skill Determination Overview" width=450></p>
+    <p><img src="concept.png" alt="Skill Determination Overview" width=400></p>
 </td></tr></table>
 <table width=90%>
     <br/>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GO5pBQA5PhI" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/R3QoZ-FltUQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <tr>
 <td valign=top align=left>
 <br/>
@@ -93,9 +89,15 @@ this work as effort toward the automated and objective organisation of <i>how-to
 <tbody><tr>
 
 <h2>Publications</h2>
-<p>Hazel Doughty, Dima Damen and Walterio Mayol-Cuevas (2017). Who's Better, Who's Best: Skill Determination in Video using Deep Ranking. <a href="skill_determination.pdf" download="skill_determination.pdf">PDF</a> | <a href="https://arxiv.org/abs/1703.09913">arxiv</a></p>
+<p>Hazel Doughty, Dima Damen and Walterio Mayol-Cuevas (2018). Who's Better, Who's Best: Skill Determination in Video using Deep Ranking. CVPR. <a href="whos_better_whos_best.pdf" download="whos_better_whos_best.pdf">PDF</a> <a href="https://arxiv.org/abs/1703.09913">arXiv</a> </p>
 
 <h2>Datasets</h2>
-The datasets for the Drawing and Chopstick-Using tasks will be made publically available alongside the annotated pairs for each dataset.
+<table width=80%>
+<tr>
+<td valign="middle">
+<p>The EPIC-Skills 2018 Dataset is available <a href="https://drive.google.com/file/d/1oX0dPM5IP638nB0YHt4L70aigIdqqpYr/view?usp=sharing">here</a>. It contains the videos for the Drawing and Chopstick Using tasks alongside the annotations for all tasks.</p>
+
+<p>The Surgery videos are taken from the <a href="https://cirl.lcsr.jhu.edu/research/hmm/datasets/jigsaws_release/">JIGSAWS</a> dataset and the Dough Rolling videos are taken from the <a href="http://kitchen.cs.cmu.edu/main.php?recipefilter=Pizza#table">CMU-MMAC pizza making activity</a>.</p<
+</tr></td></table>
 
 
