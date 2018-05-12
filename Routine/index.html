@@ -57,23 +57,28 @@ pageTracker._trackPageview();
 </head>
 
 <body topmargin="15" leftmargin="15">
-<h1>Unsupervised Long-term Routine Modelling</h1>
-<h2>September 2017</h2>
+<h1>Human Routine Modelling and Routine Change Detection</h1>
+<h2>May 2018</h2>
 
-<p><a href="https://vilab.blogs.ilrt.org/?cmt-management-team=yangdi-xu">Yangdi Xu</a>, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a></p>
+<p><a href="https://vilab.blogs.ilrt.org/?cmt-management-team=yangdi-xu">Yangdi Xu</a>, <a href="http://people.cs.bris.ac.uk/~damen">Dima Damen</a></p>
 
     <img src="kitchenDataset.png" alt="officeExample1" width=500/><br/>
 
     <p>
-    Motivated by the researches related to smart home living and elderly care, 
+    Routine, as a term, is used by
+the general public to refer to <i>the common, regular or standard
+course of activity patterns</i>. It is tightly linked to temporal
+regularity. For example, routine <i>morning coffee</i> and <i>evening
+coffee</i> both contain the same act of making coffee. However,
+since they regularly happen at a different times of day, they
+make two different routines. This research focuses on modelling human routine from visual input, as well as detecting not only the presence of routine changes, but also
+which activity patterns have been changed, in a fully unsupervised manner</p>
+    
+    <p>Motivated by the researches related to smart home living and elderly care, 
 	this work focuses on investigating the indoor routines of a single person using unsupervised Dynamic Bayesian Network. 
-	Routine is accepted by the general public as the common, regular or standard course of activity patterns.
+    Routine change detection is accordingly modelled as a pairwise model selection problem.
     </p>
     
-    <p>
-    We emphasise the relationship between activity patterns and time - in routine modelling we are not only interested in what happens, 
-	but also in when does it happen.
-    </p>
     
     <p>
     We propose to model the routine using a Dynamic Bayesian Network (DBN). Our DBN avoids using heuristic thresholds and incorporates routine-independent priors to improve performance.
@@ -81,8 +86,10 @@ pageTracker._trackPageview();
     
     <p><img src="CombinedModel3.PNG" alt="Overview" width=600/></p>
     
+    
     <h3>Publications:</h3>
-   <p> (2017) Y Xu, D Bull, D Damen. Unsupervised Long-Term Routine Modelling using Dynamic Bayesian Networks. IEEE Int Conf on Digital Image Computing Technologies and Applications (DICTA). (PDF to come)</p>
+   <p> (2018) Y Xu and D Damen. Human Routine Change Detection using Bayesian Modelling. International Conference on Patter Recognition (ICPR). <a href="./ICPR18_XuDamen.pdf">Pre-print</a></p>
+   <p> (2017) Y Xu, D Bull, D Damen. Unsupervised Long-Term Routine Modelling using Dynamic Bayesian Networks. IEEE Int Conf on Digital Image Computing Technologies and Applications (DICTA). <a href="./DICTA17_XuBullDamen.pdf">Preprint</a></p>
 <p>(2015) Y Xu, D Bull, D Damen. Unsupervised Daily Routine Modelling from a Depth Sensor using Bottom-Up and Top-Down Hierarchies. Asian Conference on Pattern Recognition (ACPR).</p>
 
     <h3>Dataset:</h3>
@@ -92,17 +99,18 @@ pageTracker._trackPageview();
             <li>The recorded activities needs to appear frequently to be routines. There are a lot of the dataset that is focus on specific action or activity for the recognition purpose, and their lack of repetitiveness makes them inappropriate for our experiment.</li>
             <li>The data should be a "long-term" recording. The definition of "long-term" here is not about the length of each individual recorded sequence, it is rather about the range of time that the dataset can cover. 
 	Since activities can only be considered as routine if they happen frequently in period of weeks or even months. Therefore, the datasets that only focus on activity instances do not meet the requirement. </li>
-            <li>The recording should be `non-scripted' which means that the participant is free to act according to his own behaviour habit.</li>
+            <li>The recording should be `unscripted' which means that the participant is free to act according to his own behaviour habit.</li>
     </ul>
 	</p>
 	
 	<h4>Office Kitchen:</h4>
 	<p>
-	The office kitchen dataset contains four sets of recordings.
+	The office kitchen dataset contains five sets of recordings.
 	the video sequences captured three single individuals in an office kitchen and lasted for 6 days using a single RGB-D prime sense. 
 	The camera is set at the entrance of the kitchen.
+    For routine change detection (ICPR2018) we use recordings 1, 2 and 5 captured by the same individual in 2014, 2016 and 2017, with 15 months gap between the pair of recordings
 	</p>
-    <p>Link: coming soon!</p>
+    <p>Link: <b>coming soon!</b></p>
    
 	<h4>Residential Kitchen:</h4>
     <p>
