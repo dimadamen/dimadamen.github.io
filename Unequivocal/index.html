@@ -1,0 +1,108 @@
+<html>
+
+<head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+     <style>
+      body {
+      font-family: 'Vollkorn', sans-serif;
+      }
+
+      .subheading {
+      font-size: 120%;
+      }
+
+      h2 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      h3 {
+      clear: left;
+      margin-top: 1em;
+      }
+      
+      img {
+      margin-right: 1em;
+      margin-bottom: 3em;
+      }
+
+      p {
+      margin: 0.5em;
+      }
+
+      nav {
+      margin-top: 3em;
+      margin-bottom: 1em;
+      }
+        
+        a:visited {color:#006633}
+        a:link {color:#006633}
+        a:hover {color: #FF0000}
+        
+        h1,h2,h3{
+            color:#006633
+        }
+
+    </style>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7551853-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<title>Dima Damen - Computer Vision Group - University of Bristol</title>
+<link rel="stylesheet" href="simple.css"> 
+</head>
+
+<body topmargin="15" leftmargin="15">
+<h1>Towards an Unequivocal Representation of Actions</h1>
+<h2>March 2018</h2>
+
+<p><a href="https://mwray.github.io">Michael Wray</a>, <a href="http://www.davidemoltisanti.com/research">Davide Moltisanti</a>, <a href="http://www.people.bris.ac.uk/~damen">Dima Damen</a></p>
+
+    <p><img src="motivation.png" alt="Overview" width=600/></p>
+
+
+    <p>
+    This work introduces verb-only representations for actions
+and interactions; the problem of describing similar
+motions (e.g. <i>open door</i>, <i>open cupboard</i>), and distinguish
+differing ones (e.g. <i>open door</i> vs <i>open bottle</i>) using
+verb-only labels.</p>
+    <p>Current approaches for action recognition
+neglect legitimate semantic ambiguities and class overlaps
+between verbs, relying on the objects to disambiguate
+interactions. We deviate from single-verb labels
+and introduce a mapping between observations and
+multiple verb labels – in order to create an Unequivocal
+Representation of Actions. The new representation benefits
+from increased vocabulary and a soft assignment to an enriched
+space of verb labels. </p>
+    <p>We learn these representations
+as multi-output regression, using a two-stream fusion CNN.
+The proposed approach outperforms conventional singleverb
+labels (also known as majority voting) on three egocentric
+datasets for both recognition and retrieval.
+    </p>
+    
+    
+    <h3>Publication:</h3>
+   <p> Towards an Unequivocal Representation of Actions. Michael Wray, Davide Moltisanti and Dima Damen (2018). <a href="https://arxiv.org/abs/1805.04026">arxiv</a></p>
+   <p> Improving Classification by Improving Labelling: Introducing Probabilistic Multi-Label Object Interaction Recognition. Michael Wray, Davide Moltisanti, Walterio Mayol-Cuevas and Dima Damen (2017). <a href="https://arxiv.org/abs/1703.08338">arxiv</a></p>
+
+    <!--<h3>Video:</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GWjX_pvwr3w" frameborder="0" allowfullscreen></iframe>-->
+
+   <!-- <h3>Results</h3>
+    Example results when looking at the top 5 ground truth and predicted verbs:
+    <p><img src="results.png" alt="Results" width=900/></p> -->
+
+    <h3>Dataset:</h3>
+    <a href="http://www.cs.bris.ac.uk/~damen/BEOID/">Bristol Egocentric Object Interactions Dataset</a>
+    
+    
+</body>
+
+</html>
