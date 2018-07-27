@@ -57,12 +57,12 @@ pageTracker._trackPageview();
 </head>
 
 <body topmargin="15" leftmargin="15">
-<h1>Action Completion</h1>
-<h2>July 2016</h2>
+<h1>Action Completion: A Temporal Model for Moment Detection</h1>
+<h2>July 2018</h2>
 
-<p>Farnoosh Heidarivincheh, <a href="http://www.cs.bris.ac.uk/~majid/">Majid Mirmehdi</a>, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a></p>
+<p>Farnoosh Heidarivincheh, <a href="http://www.cs.bris.ac.uk/~majid/">Majid Mirmehdi</a>, <a href="http://dimadamen.github.io">Dima Damen</a></p>
 
-    <p><img src="Action_Completion_Overview.png" alt="Action Completion - Overview" width=600/></p>
+    <p><img src="ActionCompletionDetectionIntro.png" alt="Action Completion - Overview" width=600/></p>
 
 
 <p>
@@ -79,7 +79,7 @@ case where one attempts to drink but realises the beverage is too hot. A
         drinking-vs-all classifier is likely to recognise this action as drinking regardless.</p>
     
     <p>
-We introduce the term action completion as a step beyond the
+In our BMVC2016 paper, we introduced the term action completion as a step beyond the
 task of action recognition. It aims to recognise whether the action's goal
 has been successfully achieved. The notion of completion differs per action
 and could be infeasible to verify using a visual sensor, however, for
@@ -87,27 +87,23 @@ many actions, an observer would be able to make the distinction by noticing
 subtle differences in motion.
     </p>
     
-    <p>Since the notion of completion differs per action, a general action
-completion method should investigate the performance of different types
-of features to accommodate the various action classes. For example, for
-the action pick, the difference between complete and incomplete actions
-originates from the subtle change in body pose when holding an object,
-or by observing an object in the hand. On the other hand, for the action
-drink, the speed at which the action is performed is better able to assess
-the completion. We propose a method that chooses the feature(s) suitable
-for recognising completion from the pool of depth features using by
-leave-one-person-out cross validation on the training set and automatically
-selecting the most discriminative feature(s).
+    <p>In our BMVC2018 paper, we introduce completion moment detection for actions - the problem of locating the moment of completion, when the action's goal is confidently considered achieved. The paper proposes a joint classification-regression recurrent model that predicts completion from a given frame, and then integrates frame-level contributions to detect sequence-level completion moment. We introduce a recurrent voting node that predicts the frame's relative position of the completion moment by either classification or regression. The method is also capable of detecting incompletion. For example, the method is capable of detecting a missed ball-catch, as well as the moment at which the ball is safely caught. We test the method on 16 actions from three public datasets, covering sports as well as daily actions. Results show that when combining contributions from frames prior to the completion moment as well as frames post completion, the completion moment is detected within one second in 89% of all tested sequences.
 </p>
     
     <h3>Publication:</h3>
-    <p>Farnoosh Heidarivincheh, Majid Mirmehdi and Dima Damen (2018). Action Completion: A Temporal Model for Moment Detection. <a href="https://arxiv.org/abs/1805.06749">Arxiv</a> </p>
-    Farnoosh Heidarivincheh, Majid Mirmehdi and Dima Damen (2016). Beyond Action Recognition: Action Completion in RGB-D Data. British Machine Vision Conference, York, UK. <a href="http://www.bmva.org/bmvc/2016/papers/paper142/index.html">BMVC Proceedings</a>, <a href="http://www.bmva.org/bmvc/2016/papers/paper142/paper142.pdf">PDF</a>, <a href="http://www.bmva.org/bmvc/2016/papers/paper142/abstract142.pdf">Abstract</a> [Note: <a href="#fig3">Fig3 updated</a>]
+    <p>Farnoosh Heidarivincheh, Majid Mirmehdi and Dima Damen (2018). Action Completion: A Temporal Model for Moment Detection. British Machine Vision Conference, New Castle, UK. <a href="https://arxiv.org/abs/1805.06749">Arxiv</a>, <a href="https://github.com/FarnooshHeidari/CompletionDetection">Completion Annotations</a>, <a href="https://youtu.be/Hrxehk3Sutc">Video</a> </p>
+    <p>Farnoosh Heidarivincheh, Majid Mirmehdi and Dima Damen (2016). Beyond Action Recognition: Action Completion in RGB-D Data. British Machine Vision Conference, York, UK. <a href="http://www.bmva.org/bmvc/2016/papers/paper142/index.html">BMVC Proceedings</a>, <a href="http://www.bmva.org/bmvc/2016/papers/paper142/paper142.pdf">PDF</a>, <a href="http://www.bmva.org/bmvc/2016/papers/paper142/abstract142.pdf">Abstract</a> [Note: <a href="#fig3">Fig3 updated</a>]</p>
 
     <h3>Dataset:</h3>
-    Full dataset (RGB + Depth + Skeleton) [33GB] available at: <a href="http://dx.doi.org/10.5523/bris.66qry08cv1fj1eunwxwob3fjz">http://dx.doi.org/10.5523/bris.66qry08cv1fj1eunwxwob3fjz</a>
+    <p>Action Completion Annotations available at: <a href="https://github.com/FarnooshHeidari/CompletionDetection">Project GitHub</a></p>
+    <p>Full dataset (RGB + Depth + Skeleton) [33GB] available at: <a href="http://dx.doi.org/10.5523/bris.66qry08cv1fj1eunwxwob3fjz">http://dx.doi.org/10.5523/bris.66qry08cv1fj1eunwxwob3fjz</a></p>
     
+    <h3></h3>
     <h3>Sample Results:</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hrxehk3Sutc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <p><img src="Completion1.png" alt="Action Completion BMVC2018 - Results" width=600/></p>
+    <p><img src="Completion2.png" alt="Action Completion BMVC2018 - Results" width=600/></p>
+    
     <iframe width="560" height="315" src="https://www.youtube.com/embed/iBdW-kVKMds" frameborder="0" allowfullscreen></iframe>
     <p><img src="Completion_Results.png" alt="Action Completion - Results" width=600/></p>
     
