@@ -60,25 +60,31 @@ pageTracker._trackPageview();
 <h1>Who's Better? Who's Best?: Pairwise Deep Ranking for Skill Determination</h1>
 <h2>March 2018</h2>
 
-<p><a href="https://hazeldoughty.github.io">Hazel Doughty</a>, <a href="https://dimadamen.github.io">Dima Damen</a>, <a href="http://www.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a></p>
+<p><a href="https://hazeldoughty.github.io">Hazel Doughty</a>, <a href="http://www.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a>, <a href="https://dimadamen.github.io">Dima Damen</a></p>
 
 <table width=60%>
 <tr>
 <td valign="middle">
 
-<p>We present a method for assessing skill of performance from video, applicable to a variety of tasks, ranging from surgery to drawing
+<p>In CVPR2018, we presented a method for assessing skill of performance from video, applicable to a variety of tasks, ranging from surgery to drawing
 and rolling pizza dough. We formulate the problem as pairwise (<it>who's better</i>) and overall (<i>who's best</i>)ranking of video collections, 
 using supervised deep ranking. We propose a novel loss function that learns discriminative features when a pair of videos exhibit variance in skill,
 and learns shared features when a pair of videos exhibit comparable skill levels. Results demonstrate our method is applicable across tasks, with the
 percentage of correctly ordered pairs of videos ranging from 70% to 83% for four datasets. We demonstrate the robustness of our approach via
 sensitivity analysis of its parameters.
-<p> We see this work as effort toward the automated and objective organisation of <i>how-to</i> videos and overall, generic skill determination in video.</p>
-
 </td>
 <td valign="top" width=5%></td>
 <td valign="top" width=40%>
     <p><img src="concept.png" alt="Skill Determination Overview" width=400></p>
-</td></tr></table>
+</td></tr>
+    <tr><td valign="middle">
+    <p>In Dec 2018, we present a new model to determine relative skill from long videos, through learnable temporal attention modules. We propose to train rank-specific temporal attention modules, learned with only video-level supervision, using a novel rank-aware loss function. In addition to attending to task-relevant video parts, our proposed loss jointly trains two attention modules to separately attend to video parts which are indicative of higher (pros) and lower (cons) skills. </p>
+</td>
+<td valign="top" width=5%></td>
+<td valign="top" width=40%>
+    <p><img src="./Rank-Aware.png" alt="Skill Determination Overview" width=400></p>
+</td></tr>
+    </table>
 <table width=90%>
     <br/>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/R3QoZ-FltUQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -89,6 +95,7 @@ sensitivity analysis of its parameters.
 <tbody><tr>
 
 <h2>Publications</h2>
+    <p>Hazel Doughty, Walterio Mayol-Cuevas, Dima Damen (2018). The Pros and Cons: Rank-aware Temporal Attention for Skill Determination in Long Videos. Arxiv. <a href="https://arxiv.org/abs/1812.05538">arxiv</a></p>
 <p>Hazel Doughty, Dima Damen and Walterio Mayol-Cuevas (2018). Who's Better, Who's Best: Skill Determination in Video using Deep Ranking. CVPR. <a href="whos_better_whos_best.pdf" download="whos_better_whos_best.pdf">PDF</a> <a href="https://arxiv.org/abs/1703.09913">arXiv</a> </p>
 
 <a name="dataset"><h2>Datasets</h2></a>
