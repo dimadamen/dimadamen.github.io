@@ -13,6 +13,36 @@
 
       ga('create', 'UA-7551853-2', 'auto');
       ga('send', 'pageview');
+            
+            // widgets script loading taken from Twitter
+window.twttr = (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function (f) {
+        t._e.push(f);
+    };
+
+    return t;
+}(document, "script", "twitter-wjs"));
+
+twttr.ready(function (twttr) {
+    twttr.events.bind("rendered", function (event) {
+        var widgetFrame = event.target;
+        var retweets = widgetFrame.contentDocument.querySelectorAll('div.timeline-Tweet--isRetweet');
+        retweets.forEach(function (node) {
+            if (node.parentNode) { // (in)sanity check
+                node.parentNode.style = 'display: none;' // hide entire parent li tag
+            }
+        })
+    });
+});
 
     </script>
     <style>
@@ -63,13 +93,13 @@
   
   <body>
     <h1>Dima Damen</h1>
-
     <div class="subheading">
-      <img src="Dima2.jpg" />
+      <img src="Dima2.jpg"/>
       Associate Professor (Reader) at the
       <a href="http://www.cs.bris.ac.uk">Department of Computer Science</a>,<br/>
       <a href="http://www.bris.ac.uk/vi-lab/">Visual Information Laboratory</a>,
       <a href="http://www.bristol.ac.uk">University of Bristol</a>
+        
     </div>
 
     <nav>
@@ -83,7 +113,9 @@
       <a href="contact.html">Contact</a>
     </nav>
     
-    <h2>News</h2>
+       <h2>News</h2>
+      <table cellspacing="0"><tr><td width=70%>
+             
       <p>Feb 2019: Will be giving a keynote at <a href="http://www.visapp.visigrapp.org">VISAPP 2019 in Prague</a></p>
       <p>Dec 2018: <a href="http://eyewear-computing.org/">EPIC@CVPR2019</a> Workshop to take place in Long Beach</p>
       <p>Oct 2018: Scheduled talk at MPI Tubingen - <a href="https://ps.is.tuebingen.mpg.de/events/a-fine-grained-perspective-onto-object-interactions">details</a></p>
@@ -93,13 +125,13 @@
       <p>Aug 2018: EPIC-SKILLS dataset, for our CVPR2018 paper is now <a href="./Skill/index.html#dataset"></a>online</p>
       <p>Aug 2018: Programme for <a href="http://www.eyewear-computing.org">EPIC@ECCV2018 workshop</a> is now available. Join us in Munich on Sep 9th</p>
       <p>July 2018: Looking forward to giving a tutorial on <b>egocentric vision</b> as part of the <a href="https://cvss-uea.uk">BMVA Summer School</a> on July 5th, University of East Anglia.</p>
-      <p>Apr 2018: EPIC-KITCHENS 2018 goes live today: 11.5M Frames, full HD, 60fps, head-mounted, 32 kitchens from 4 cities (in North America and Europe), 10 nationalities. FULLY annotated: 40K action segments, 454K object bounding boxes. Dataset: <a href="http://epic-kitchens.github.io">http://epic-kitchens.github.io</a> Details at: <a href="http://arxiv.org/abs/1804.02748">Arxiv</a></p>
-      <p>Apr 2018: Our paper "Human Routine Change Detection using Bayesian Modelling" accepted at ICPR2018, to be presented in Beijing this August. <a href="./Routine/">Details</a></p>
-      <p>Feb 2018: Our paper "Who's Better, Who's Best" accepted at CVPR2018, to be presented in Salt Lake city this June. <a href="./Skill/">Details</a></p>
-      <p>Feb 2018: Congrats to <a href="http://www.irc-sphere.ac.uk/uob-yangdi">Yangdi Xu</a> for passing his PhD viva with minor corrections</p>
     <p><a id="showOlderNews" href="#olderNews">Older news...</a></p>
     <div id="olderNews">
       <a name="olderNews" />
+              <p>Apr 2018: EPIC-KITCHENS 2018 goes live today: 11.5M Frames, full HD, 60fps, head-mounted, 32 kitchens from 4 cities (in North America and Europe), 10 nationalities. FULLY annotated: 40K action segments, 454K object bounding boxes. Dataset: <a href="http://epic-kitchens.github.io">http://epic-kitchens.github.io</a> Details at: <a href="http://arxiv.org/abs/1804.02748">Arxiv</a></p>
+      <p>Apr 2018: Our paper "Human Routine Change Detection using Bayesian Modelling" accepted at ICPR2018, to be presented in Beijing this August. <a href="./Routine/">Details</a></p>
+      <p>Feb 2018: Our paper "Who's Better, Who's Best" accepted at CVPR2018, to be presented in Salt Lake city this June. <a href="./Skill/">Details</a></p>
+      <p>Feb 2018: Congrats to <a href="http://www.irc-sphere.ac.uk/uob-yangdi">Yangdi Xu</a> for passing his PhD viva with minor corrections</p>
               <p>Jan 2018: Serving on the High Performance Computing exec board at UoB</p>
       <p>Oct 2017: Selected as outstanding reviewer at ICCV 2017</p>
       <p>Oct 2017: Well-attended <a href="http://www.eyewear-computing.org/EPIC_ICCV17/">Second Int. Egocentric Perception Interaction and Computing (EPIC) workshop alongside ICCV in Venice</a></p>
@@ -158,6 +190,10 @@
       <p>June 2013: Outstanding Reviewer award at <a href="http://www.pamitc.org/cvpr13/">IEEE CVPR 2013</a>.</p>
       <p>May 2013: New bug-fixed version (v1.1) of our Multi-Object Detector (MOD) code is now available <a href="MultiObjDetector.htm">online</a></p>
     </div>
+
+          </td><td valign="top">
+      <a class="twitter-timeline" data-width="400" data-height="350" href="https://twitter.com/dimadamen">Tweets by dimadamen</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</td></tr></table>
 
     <a name="Projects"><h2>Research Projects</h2></a>
     
