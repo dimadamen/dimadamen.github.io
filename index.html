@@ -37,7 +37,7 @@ twttr.ready(function (twttr) {
         var widgetFrame = event.target;
         var retweets = widgetFrame.contentDocument.querySelectorAll('div.timeline-Tweet--isRetweet');
         retweets.forEach(function (node) {
-            if (node.retweeted_status) { // (in)sanity check
+            if (node.parentNode.retweeted_status) { // (in)sanity check
                 node.parentNode.style = 'display: none;' // hide entire parent li tag
             }
         })
