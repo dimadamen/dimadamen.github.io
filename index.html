@@ -37,9 +37,9 @@ twttr.ready(function (twttr) {
         var widgetFrame = event.target;
         var retweets = widgetFrame.contentDocument.querySelectorAll('div.timeline-Tweet--isRetweet');
         retweets.forEach(function (node) {
-            if (node.parentNode) { // (in)sanity check
-                node.parentNode.style = 'display: none;' // hide entire parent li tag
-            }
+                if (node.parentNode && node.parentNode.style !== 'display: none;') { // (in)sanity check
+                    node.parentNode.style = 'display: none;' // hide entire parent li tag
+                }
         })
     });
 });
