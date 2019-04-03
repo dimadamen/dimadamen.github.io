@@ -35,12 +35,8 @@ window.twttr = (function (d, s, id) {
 twttr.ready(function (twttr) {
     twttr.events.bind("rendered", function (event) {
         var widgetFrame = event.target;
-        var retweets = widgetFrame.contentDocument.querySelectorAll('div.timeline-Tweet');
-        retweets.forEach(function (node) {
-            if (node.parentNode) { // (in)sanity check
-                node.parentNode.style = 'display: none;' // hide entire parent li tag
-            }
-        })
+        var retweets = widgetFrame.contentDocument.querySelectorAll('div.timeline-Tweet--isRetweet');
+      
     });
 });
 
