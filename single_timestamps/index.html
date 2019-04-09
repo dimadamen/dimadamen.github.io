@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Action Recognition from Single Timestamp Supervision in Untrimmed Videos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <h5><a class="js-scroll-trigger" href="#page-top" style="color:white">Action Recognition from Single Timestamp Supervision in Untrimmed Videos</a></h5>
+    </div>
+  
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#authors">Authors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#abstract">Abstract</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#video">Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#bibtex">Bibtex</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#related">Related</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Action Recognition from Single Timestamp Supervision in Untrimmed Videos</h1>
+      <h4>CVPR 2019</h4>          
+    </div>
+  </header>
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <figure>
+                <img style='height: 100%; width: 100%; object-fit: contain' src="initG2.png" widht=3>
+                 <figcaption></br>
+                Labeling start and end times, of every action instance, in a long untrimmed video, is not only expensive but often <a href="#related">ambiguous</a>.
+                In this work, we use cheaper roughly-aligned labels - these are one timestamp per action, close to (but not necessarily within) the action instance [see the coloured dots].<br/><br/>
+                
+                We propose a method that starts from a sampling distributions, initialised from these single timestamps.
+                 The initial distributions (top) may overlap and contain background frames.
+                 We iteratively refine the locations and temporal extent of these distributions (bottom) using the classifier response during training.<br/><br/>
+                
+                 We  evaluate  our  method  on  three  datasets  for  fine-grained recognition: THUMOS, BEOID and EPIC-Kitchens.
+                 Our work demonstrates that these distributions convergeto the location and extent of discriminative action segments.
+                 </figcaption>
+            </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="authors">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Authors</h2>          
+          <ul>
+            <li><a href="http://www.davidemoltisanti.com/research/" target="_blank">Davide Moltisanti</a> - University of Bristol, Visual Information Laboratory</li>
+            <li><a href="https://www.cs.utoronto.ca/~fidler/" target="_blank">Sanja Fidler</a> - University of Toronto; NVIDIA; Vector Institute</li>
+            <li><a href="http://people.cs.bris.ac.uk/~damen/" target="_blank">Dima Damen</a> - University of Bristol, Visual Information Laboratory</li>           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="abstract">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Abstract</h2>
+          <p class="lead" align="justify">
+            Recognising actions in videos typically requires the start and end times of each action to be known. 
+            This labelling is not only subjective, but also expensive to acquire. </br>
+            We propose a method that uses <span style="font-weight:bold">single</span> timestamps located around each action instance, in untrimmed videos, as opposed to the standard start/end times. 
+            We replace expensive action bounds with sampling distributions initialised from these timestamps.
+            We then use the classifier's response to iteratively update the sampling distributions.
+            We demonstrate that these distributions converge to the location and extent of discriminative action segments. </br>
+            We evaluate our method on three datasets for fine-grained recognition and show that single timestamps offer a
+            reasonable compromise between recognition performance and labelling effort, performing comparably to full temporal supervision.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <figure>
+                <img style='height: 100%; width: 100%; object-fit: contain' src="updateConcept.png" widht=3>
+                 <figcaption></br>Updating the sampling distribution using the classifier response. 
+                 Example from action 'open fridge' in <a href="https://epic-kitchens.github.io/2018" target = "_blank"> EPIC Kitchens</a>.
+                 </figcaption>
+            </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="video">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Video</h2>          
+          <iframe style='height: 400px; width: 100%' src="https://www.youtube.com/embed/K_R3MPvcJhc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Download</h2>
+          <ul>
+            <li><a href="paper/Action_Recognition_with_Single_Timestamp_Supervision__CVPR_.pdf">Paper</a></li>            
+            <li><a href="https://bitbucket.org/dmoltisanti/action_recognition_single_timestamps/src" target="_blank">Code and Single-timestamp Annotations</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="bibtex">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h2>Bibtex</h2>
+            <p style="
+                        display: block;
+                        padding: 9.5px;
+                        margin: 0 0 10px;
+                        font-size: 13px;
+                        line-height: 1.428571429;
+                        color: #333;
+                        word-break: break-all;
+                        word-wrap: break-word;
+                        background-color: #f5f5f5;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        ">
+            <tt>@InProceedings{moltisanti19action, </br>
+                author      = "Moltisanti, Davide and  Fidler, Sanja and Damen, Dima",</br>
+                title       = "{A}ction {R}ecognition from {S}ingle {T}imestamp {S}upervision in {U}ntrimmed {V}ideos",</br>
+                booktitle   = "Computer Vision and Pattern Recognition (CVPR)",</br>
+                year        = "2019"</br>}</tt>
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="related">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Related</h2>
+          <ul>
+            <li>Davide Moltisanti, Michael Wray, Walterio Mayol-Cuevas, Dima Damen (2017). <a href="http://people.cs.bris.ac.uk/~damen/Trespass/" target="_blank">Trespassing the Boundaries: Labeling Temporal Bounds for Object Interactions in Egocentric Video.</a> International Conference on Computer Vision (ICCV).</li>
+            <li><a href="https://bitbucket.org/dmoltisanti/rubiconannotator">Rubicon Boundaries Annotation Interface - Code</a></li>
+            <li><a href="https://epic-kitchens.github.io/2018">EPIC-Kitchens dataset</a></li>
+          </ul>
+            
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="acknowledgement">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Acknowledgement</h2>
+          <p class="lead" align="justify">
+          Research supported by: EPSRC <a href="https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/N033779/1" target="_blank">LOCATE (EP/N033779/1)</a> and EPSRC Doctoral Training Programme at the University of Bristol.<br/>
+          Part of this work was carried out during a summer internship at the University of Toronto, working with Dr Fidler
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
