@@ -69,15 +69,14 @@
             <figure>
                 <img style='height: 100%; width: 100%; object-fit: contain' src="initG2.png" widht=3>
                  <figcaption></br>
-                Labeling start and end times, of every action instance, in a long untrimmed video, is not only expensive but often <a href="#related">ambiguous</a>.
-                In this work, we use cheaper roughly-aligned labels - these are one timestamp per action, close to (but not necessarily within) the action instance [see the coloured dots].<br/><br/>
+                Labelling the start and end times of actions in long untrimmed videos is not only expensive, but often <a href="#related">ambiguous</a>.
+                In this work, we use cheaper roughly-aligned labels. These are one timestamp per action, close to (but not necessarily within) the action instance (see the coloured dots).<br/><br/>
                 
-                We propose a method that starts from a sampling distributions, initialised from these single timestamps.
-                 The initial distributions (top) may overlap and contain background frames.
-                 We iteratively refine the locations and temporal extent of these distributions (bottom) using the classifier response during training.<br/><br/>
-                
-                 We  evaluate  our  method  on  three  datasets  for  fine-grained recognition: THUMOS, BEOID and EPIC-Kitchens.
-                 Our work demonstrates that these distributions convergeto the location and extent of discriminative action segments.
+                We propose a method that starts from sampling distributions initialised from these single timestamps. 
+                The initial distributions (top) may overlap and contain background frames. 
+                We iteratively refine the locations and temporal extent of these distributions (bottom) using the classifier response during training.<br/><br/>
+                We  evaluate  our  method  on  three  datasets  for  fine-grained recognition: THUMOS, BEOID and EPIC-Kitchens. 
+                Our work demonstrates that the sampling distributions converge to the location and extent of discriminative action segments.
                  </figcaption>
             </figure>
         </div>
@@ -153,8 +152,8 @@
         <div class="col-lg-8 mx-auto">
           <h2>Download</h2>
           <ul>
-            <li><a href="paper/Action_Recognition_with_Single_Timestamp_Supervision__CVPR_.pdf">Paper</a></li>            
-            <li><a href="https://bitbucket.org/dmoltisanti/action_recognition_single_timestamps/src" target="_blank">Code and Single-timestamp Annotations</a></li>
+            <li><a href="paper/Action_Recognition_with_Single_Timestamp_Supervision__CVPR_.pdf" target="_blank">Paper</a></li>            
+            <li><a href="https://bitbucket.org/dmoltisanti/action_recognition_single_timestamps/src" target="_blank">Code and Single Timestamp Annotations</a></li>
           </ul>
         </div>
       </div>
@@ -197,8 +196,8 @@
           <h2>Related</h2>
           <ul>
             <li>Davide Moltisanti, Michael Wray, Walterio Mayol-Cuevas, Dima Damen (2017). <a href="http://people.cs.bris.ac.uk/~damen/Trespass/" target="_blank">Trespassing the Boundaries: Labeling Temporal Bounds for Object Interactions in Egocentric Video.</a> International Conference on Computer Vision (ICCV).</li>
-            <li><a href="https://bitbucket.org/dmoltisanti/rubiconannotator">Rubicon Boundaries Annotation Interface - Code</a></li>
-            <li><a href="https://epic-kitchens.github.io/2018">EPIC-Kitchens dataset</a></li>
+            <li><a href="https://bitbucket.org/dmoltisanti/rubiconannotator" target="_blank">Rubicon Boundaries Annotator - Code</a></li>
+            <li><a href="https://epic-kitchens.github.io/2018" target="_blank">EPIC-Kitchens dataset</a></li>
           </ul>
             
         </div>
@@ -213,7 +212,8 @@
           <h2>Acknowledgement</h2>
           <p class="lead" align="justify">
           Research supported by: EPSRC <a href="https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/N033779/1" target="_blank">LOCATE (EP/N033779/1)</a> and EPSRC Doctoral Training Programme at the University of Bristol.<br/>
-          Part of this work was carried out during a summer internship at the University of Toronto, working with Dr Fidler
+          </br>
+          Part of this work was carried out during Davide's summer internship at the University of Toronto, working with Dr. Fidler.
           </p>
         </div>
       </div>
