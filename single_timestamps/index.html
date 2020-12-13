@@ -25,7 +25,7 @@
     <div class="container">
       <h5><a class="js-scroll-trigger" href="#page-top" style="color:white">Action Recognition from Single Timestamp Supervision in Untrimmed Videos</a></h5>
     </div>
-  
+
     <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,9 @@
             <a class="nav-link js-scroll-trigger" href="#bibtex">Bibtex</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#history">A short history</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#related">Related</a>
           </li>
         </ul>
@@ -61,10 +64,10 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Action Recognition from Single Timestamp Supervision in Untrimmed Videos</h1>
-      <h4>CVPR 2019</h4>          
+      <h4>CVPR 2019</h4>
     </div>
   </header>
-  
+
   <section>
     <div class="container">
       <div class="row">
@@ -74,11 +77,11 @@
                  <figcaption></br>
                 Labelling the start and end times of actions in long untrimmed videos is not only expensive, but often <a href="#related">ambiguous</a>.
                 In this work, we use cheaper roughly-aligned labels. These are one timestamp per action, close to (but not necessarily within) the action instance (see the coloured dots).<br/><br/>
-                
-                We propose a method that starts from sampling distributions initialised from these single timestamps. 
-                The initial distributions (top) may overlap and contain background frames. 
+
+                We propose a method that starts from sampling distributions initialised from these single timestamps.
+                The initial distributions (top) may overlap and contain background frames.
                 We iteratively refine the locations and temporal extent of these distributions (bottom) using the classifier response during training.<br/><br/>
-                We  evaluate  our  method  on  three  datasets  for  fine-grained recognition: THUMOS, BEOID and EPIC-Kitchens. 
+                We  evaluate  our  method  on  three  datasets  for  fine-grained recognition: THUMOS, BEOID and EPIC-Kitchens.
                 Our work demonstrates that the sampling distributions converge to the location and extent of discriminative action segments.
                  </figcaption>
             </figure>
@@ -91,11 +94,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Authors</h2>          
+          <h2>Authors</h2>
           <ul>
             <li><a href="http://www.davidemoltisanti.com/research/" target="_blank">Davide Moltisanti</a> - University of Bristol, Visual Information Laboratory</li>
             <li><a href="https://www.cs.utoronto.ca/~fidler/" target="_blank">Sanja Fidler</a> - University of Toronto; NVIDIA; Vector Institute</li>
-            <li><a href="http://people.cs.bris.ac.uk/~damen/" target="_blank">Dima Damen</a> - University of Bristol, Visual Information Laboratory</li>           
+            <li><a href="http://people.cs.bris.ac.uk/~damen/" target="_blank">Dima Damen</a> - University of Bristol, Visual Information Laboratory</li>
           </ul>
         </div>
       </div>
@@ -108,9 +111,9 @@
         <div class="col-lg-8 mx-auto">
           <h2>Abstract</h2>
           <p class="lead" align="justify">
-            Recognising actions in videos typically requires the start and end times of each action to be known. 
+            Recognising actions in videos typically requires the start and end times of each action to be known.
             This labelling is not only subjective, but also expensive to acquire. </br>
-            We propose a method that uses <span style="font-weight:bold">single</span> timestamps located around each action instance, in untrimmed videos, as opposed to the standard start/end times. 
+            We propose a method that uses <span style="font-weight:bold">single</span> timestamps located around each action instance, in untrimmed videos, as opposed to the standard start/end times.
             We replace expensive action bounds with sampling distributions initialised from these timestamps.
             We then use the classifier's response to iteratively update the sampling distributions.
             We demonstrate that these distributions converge to the location and extent of discriminative action segments. </br>
@@ -121,14 +124,14 @@
       </div>
     </div>
   </section>
-  
+
   <section>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
             <figure>
                 <img style='height: 100%; width: 100%; object-fit: contain' src="updateConcept.png" widht=3>
-                 <figcaption></br>Updating the sampling distribution using the classifier response. 
+                 <figcaption></br>Updating the sampling distribution using the classifier response.
                  Example from action 'open fridge' in <a href="https://epic-kitchens.github.io/2018" target = "_blank"> EPIC Kitchens</a>.
                  </figcaption>
             </figure>
@@ -136,19 +139,19 @@
       </div>
     </div>
   </section>
-  
-  
+
+
   <section id="video">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Video</h2>          
-          <iframe style='height: 400px; width: 100%' src="https://www.youtube.com/embed/K_R3MPvcJhc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+          <h2>Video</h2>
+          <iframe style='height: 400px; width: 100%' src="https://www.youtube.com/embed/K_R3MPvcJhc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </section>
-  
+
    <section id="poster">
     <div class="container">
       <div class="row">
@@ -169,14 +172,14 @@
         <div class="col-lg-8 mx-auto">
           <h2>Download</h2>
           <ul>
-            <li><a href="paper/Action_Recognition_with_Single_Timestamp_Supervision__CVPR_.pdf" target="_blank">Paper</a></li>            
+            <li><a href="paper/Action_Recognition_with_Single_Timestamp_Supervision__CVPR_.pdf" target="_blank">Paper</a></li>
             <li><a href="https://bitbucket.org/dmoltisanti/action_recognition_single_timestamps/src" target="_blank">Code and Single Timestamp Annotations</a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  
+
   <section id="bibtex">
     <div class="container">
         <div class="row">
@@ -205,23 +208,48 @@
       </div>
     </div>
   </section>
-  
+
+  <section id="history">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>A short history</h2>
+
+              <p class="lead" align="justify">
+                For the <a href="https://epic-kitchens.github.io/2020-55.html">first version of EPIC-KITCHENS</a> we used a live-commentary approach (people narrating actions without pausing the video) to annotate the untrimmed videos.
+                The narration timestamps served as an initial ground to collect action boundaries and object boxes.
+                As we collected the dataset, we wondered if the rough narration timestamps could be used to supervise action recognition models.
+                We showed this is possible in this paper. </br></br>
+
+                While working on the paper we realised we were missing many actions in the videos. This was because annotators did not pause the videos while they were speaking, and as a result they were naturally not able to narrate actions that were happening as they spoke. Moreover, the timestamps were often not well aligned with the videos.
+                For the <a href="https://epic-kitchens.github.io/2020-100">EPIC-KITCHENS extension</a> we wanted to fix these issues, i.e. we wanted dense and precise narration timestamps.
+                The EPIC Narrator was thus born! The tool allows easy annotations of actions in video through narration.
+                Importantly, the narrator dramatically increased annotation density and precision. </br></br>
+
+                You can <a href="https://github.com/epic-kitchens/epic-kitchens-100-narrator" target="_blank">download the EPIC Narrator here</a>. </br>
+                You can find more about the benefits of using the narrator <a href="https://arxiv.org/abs/2006.13256">in our arXiv paper</a>.
+              </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="related">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Related</h2>
           <ul>
+            <li><a href="https://epic-kitchens.github.io" target="_blank">EPIC-Kitchens dataset</a></li>
+            <li><a href="https://github.com/epic-kitchens/epic-kitchens-100-narrator" target="_blank">The EPIC Narrator</a></li>
             <li>Davide Moltisanti, Michael Wray, Walterio Mayol-Cuevas, Dima Damen (2017). <a href="http://people.cs.bris.ac.uk/~damen/Trespass/" target="_blank">Trespassing the Boundaries: Labeling Temporal Bounds for Object Interactions in Egocentric Video.</a> International Conference on Computer Vision (ICCV).</li>
-            <li><a href="https://bitbucket.org/dmoltisanti/rubiconannotator" target="_blank">Rubicon Boundaries Annotator - Code</a></li>
-            <li><a href="https://epic-kitchens.github.io/2018" target="_blank">EPIC-Kitchens dataset</a></li>
+            <!-- <li><a href="https://bitbucket.org/dmoltisanti/rubiconannotator" target="_blank">Rubicon Boundaries Annotator - Code</a></li>             -->
           </ul>
-            
         </div>
       </div>
     </div>
   </section>
-  
+
   <section id="acknowledgement">
     <div class="container">
       <div class="row">
