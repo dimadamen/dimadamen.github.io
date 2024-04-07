@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en-US">
+<link rel="stylesheet" href="styles.css">
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic'
+      rel='stylesheet' type='text/css'>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Spatial Cognition from Egocentric Video: Out of Sight, Not Out of Mind</title>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="canonical" href="https://chiaraplizzari.github.io/OSNOM/"/>
+    <meta name="referrer" content="no-referrer-when-downgrade"/>
+
+    <meta property="og:site_name" content="OSNOM"/>
+    <meta property="og:type" content="video.other"/>
+    <meta property="og:title" content="OSNOM"/>
+    <meta property="og:description"
+          content="C. Plizzari, T. Perrett, B. Caputo, D.Damen. ARGO1M-what-can-a-cook."/>
+    <meta property="og:url" content="https://chiaraplizzari.github.io"/>
+    <meta property="og:image" content="https://github.com/Chiaraplizz/project-page/tree/gh-pages/teaser_OSNOM.png"/>
+    <meta property="og:image:width" content="2848"/>
+    <meta property="og:image:height" content="974"/>
+
+    <meta property="article:publisher" content="https://github.com/chiaraplizz"/>
+	
+    <meta name="twitter:card" content="teaser_OSNOM.png"/>
+    <meta name="twitter:title" content="What can a cook in Italy teach a mechanic in India? Action Recognition Generalisation Over Scenarios and Locations"/>
+    <meta name="twitter:description"
+          content="C. Plizzari, T. Perrett, B. Caputo, D.Damen. ARGO1M-what-can-a-cook."/>
+    <meta name="twitter:image" content="https://github.com/Chiaraplizz/project-page/tree/gh-pages/teaser_OSNOM.png"/>
+    <meta name="twitter:site" content="@chiaraplizz"/>
+    
+</head>
+
+<body>
+<div max-width=100%>
+    <br><br><br>
+    <span style="font-size:44px;font-weight:bold;">Spatial Cognition from Egocentric Video: <br> Out of Sight, Not Out of Mind</span><br/>
+    <div class="table-like" style="justify-content:space-evenly;max-width:800px;margin:auto;">
+        <div><span style="font-size:18px"><a href="https://chiaraplizz.github.io/"
+                                             target="_blank">Chiara Plizzari</a></span>
+            <span style="font-size:18px">Politecnico di Torino</span>
+        </div>
+	<div><span style="font-size:18px"><a href="https://shubham-goel.github.io/"
+                                             target="_blank">Shubham Goel</a></span>
+            <span style="font-size:18px">University of California, Berkeley</span>
+        </div>
+        <div><span style="font-size:18px"><a href="https://tobyperrett.github.io/"
+                                             target="_blank">Toby Perrett</a></span>
+            <span style="font-size:18px">University of Bristol</span>
+        </div>
+	<div><span style="font-size:18px"><a href="https://jacobchalk.github.io/"
+                                             target="_blank">Jacob Chalk</a></span>
+            <span style="font-size:18px">University of Bristol</span>
+
+        </div>
+        <div><span style="font-size:18px"><a href="https://people.eecs.berkeley.edu/~kanazawa/"
+                                             target="_blank">Angjoo Kanazawa</a></span>
+            <span style="font-size:18px">University of California, Berkeley</span>
+
+        </div>
+        <div><span style="font-size:18px"><a href="http://dimadamen.github.io/"
+                                             target="_blank">Dima Damen</a></span>
+            <span style="font-size:18px">University of Bristol</span>
+        </div>
+        
+    </div>
+    <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
+        
+        <div><span style="font-size:28px"><a href='https://arxiv.org/abs/2306.08713'>[Paper]</a></span></div>
+        <div><span style="font-size:28px"><a href=''>[Code]</a></span></div>
+	<div><span style="font-size:28px"><a href=''>[Video]</a></span></div>
+        
+
+
+    </div>
+<div style="width:800px; margin:0 auto; text-align: justify;">
+        <!--
+        <p>
+            <b>Summary:</b>...
+        </p>
+        -->
+
+       
+
+        <p>	
+<b>Motivation:</b> As humans move around, performing their daily tasks, they
+are able to recall where they have positioned objects in their environment, even if these objects are currently out of sight. In this paper, we
+aim to mimic this <em>spatial cognition</em> ability. We thus formulate the task of Out of Sight, Not Out of Mind – 3D tracking active objects using
+observations captured through an egocentric camera.
+
+    <div style="width:900px; margin:0 auto; text-align: justify;">
+        <!--
+        <p>
+            <b>Summary:</b>...
+        </p>
+        -->
+
+        <br><br>
+        <img style="height:470px" src="teaser_OSNOM.png"/>
+	    <figcaption><b>Fig: Spatial Cognition.</b>  From an egocentric video (top), we propose the task Out
+of Sight, Not Out of Mind, where the 3D locations of all active objects are known
+when they are both in- and out-of-sight. We show a 24 mins video and demonstrate
+how solving this task enables tracking 3 active objects through the video in the world
+coordinate frame – from a top-view down with camera motion (left top); identifying
+when they are in-sight (left bottom); their trajectory from a side view at five different
+frames (right). Neon balls show the 3D locations of these objects over time along with
+the camera (white prism), corresponding frame (inset) and object location change
+(coloured arrow). The <em>chopping board></em> is picked from a lower cupboard (1:00) and is
+in-hand at 05:00. The <em>knife</em> is picked up from the drawer (after 05:00), while in use
+(10:00) until it is discarded in the sink (before 15:00). The <em>plate</em> travels from the drainer
+to the table (15:00), then back to the counter (20:00). </figcaption>
+        <br><br>
+
+        <p>
+            <b>Abstract:</b> As humans move around, performing their daily tasks, they
+are able to recall where they have positioned objects in their environ-
+ment, even if these objects are currently out of sight. In this paper, we
+aim to mimic this spatial cognition ability. We thus formulate the task
+of Out of Sight, Not Out of Mind – 3D tracking active objects using
+observations captured through an egocentric camera. We introduce Lift,
+Match and Keep (LMK), a method which lifts partial 2D observations
+to 3D world coordinates, matches them over time using visual appear-
+ance, 3D location and interactions to form object tracks, and keeps
+these object tracks even when they go out-of-view of the camera – hence
+keeping in mind what is out of sight. We test LMK on 100 long videos
+from EPIC-KITCHENS. Our results demonstrate that spatial cognition
+is critical for correctly locating objects over short and long time scales.
+E.g., for one long egocentric video, we estimate the 3D location of 50
+active objects. Of these, 60% can be correctly positioned in 3D after 2
+minutes of leaving the camera view.
+
+        </p>
+    </div>
+    <br>
+	<h1> 3D Scene Representation </h1>
+    <div style="width:800px; margin:0 auto; text-align: justify">
+	<p> We produce scene geometry for 100 videos from EPIC-KITCHENS-100. Those are 3D mesh extracted using a classical Multi-View Stereopsis pipeline that runs patch matching to find dense correspondences
+between stereo image pairs, triangulates the correspondences to estimate depth,
+and fuses them together into a dense 3D point cloud with surface normals.
+	<br>
+        <figure>
+            <img src="meshes.png" alt="Trulli" style="width:100%">
+	
+        </figure>
+
+
+
+    <hr>
+
+    <h1> Method - Lift, Match and Keep (LMK) </h1>
+    <div style="width:800px; margin:0 auto; text-align: justify">
+	<p>We call our method <em>Lift, Match, and Keep (LMK)</em>. It operates by first <em>lifting</em> 2D observations of objects to 3D, <em>matching</em> them over time, and <em>keeping</em> objects in memory when they are out-of-sight.</p>
+
+    <ul>
+        
+            <span class="step-name"><b>Lifting</b></span> We utilise the centroids of object masks as 2D locations and sample the corresponding depths from the mesh-aligned monocular depth estimate. The 3D object locations in world coordinates are computed by unprojecting the mask's centroid using the estimated camera pose.
+       
+        
+            <span class="step-name"><b>Match</b></span> Objects are tracked in 3D by matching visual and locational features. This process assigns each object to a consistent <em>track</em>.
+        
+            <span class="step-name"><b>Keep</b></span> Upon the first observation of an object, the track is extrapolated back to the beginning of the video, embodying the common sense understanding that objects do not suddenly materialize from nowhere. If a track does not receive a new observation, its representation is kept unchanged, maintaining the premise that if an object is not observed moving, its location is assumed to be static.
+       
+    </ul>
+	<br>
+        <figure>
+            <img src="projects.png" alt="Trulli" style="width:100%">
+	
+        </figure>
+
+
+
+    <hr>
+	
+    <section id="video">
+    <div style="width:800px; margin:0 auto; text-align: justify;">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+	  <h2>LMK visualisation</h2>
+	We show the mesh of the environment, along with coloured neon dots representing the active objects we lift and track in 3D.
+The videos also show the estimated camera position and direction throughout the video along with the corresponding egocentric footage.
+
+In each case, the clip shows object locations predicted when they are in-sight, when they are out-of-view as well as when they are moving in-hand. Selected examples also show objects picked up / returned to fridge or cupboard highlighting the complexity of spatial cognition from egocentric videos.
+		<br>
+          <video width="800" height="450" autoplay="" loop="" muted="" controls="">
+            <source src="Supplementary.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div></section>
+
+
+	
+
+    <table align=center width=700px style="max-width: 100%">
+        
+            
+        <div class="row">
+        <div style="width:800px; margin:0 auto; text-align: justify;">
+            <h2>Bibtex</h2>
+            <p style="  width:500px; 
+		        margin:0 auto; 
+		        text-align: justify;
+                        display: block;
+                        padding: 9.5px;
+                        font-size: 13px;
+                        line-height: 1.428571429;
+                        color: #333;
+                        word-break: break-all;
+                        word-wrap: break-word;
+                        background-color: #f5f5f5;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        ">
+            <tt>@inproceedings{Plizzari2023,
+   title={Spatial Cognition from Egocentric Video:
+Out of Sight, Not Out of Mind},<br>
+   author={Plizzari, Chiara and Goel, Shubham and Perrett, Toby and Chalk, Jacob and Kanazawa, Angjoo and Damen, Dima},<br>
+   booktitle={ArXiv},<br>
+   year={2024}
+}
+            </p>
+        </div>
+      </div>
+    </div> 
+	
+      
+	
+	
+            </td>
+        </tr>
+        <tr>
+            <td width=250px align=left>
+            </td>
+            <td width=50px align=center>
+            </td>
+            <td width=550px align=left>
+                <div class="paper">
+                    <pre xml:space="preserve">
+
+                    </pre>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <hr>
+<div style="width:800px; margin:0 auto; text-align: justify;">
+        <!--
+        <p>
+            <b>Summary:</b>...
+        </p>
+        -->
+
+       
+
+        <p>	
+<b>Acknowledgements</b> <br>
+	Research at Bristol is supported by
+EPSRC Fellowship UMPIRE (EP/T004991/1) and EPSRC
+Program Grant Visual AI (EP/T028572/1). This project ac-
+knowledges the use of University of Bristol’s Blue Crystal 4
+(BC4) HPC facilities. We thank Jitendra Malik for early discussions on
+this work. 
+    
+	
+    <div style="text-align:center; font-size: 12px;">
+        <a href="https://github.com/ajayjain/lmconv/tree/gh-pages" style="color: #aaa">Original Website Template</a>
+    </div>
+</div>
+</body>
+</html>
